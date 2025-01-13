@@ -26,30 +26,30 @@ export const projects = [
     id: 'baas',
     tags: ['nuxt.js'],
     title: 'Baas(Blockchain as a Service) 웹 플랫폼 개발',
-    desc: `비상장 토큰을 거래할 수 있는 거래 플랫폼 웹과 트랜잭션을 추적할 수 있는 모니터링 웹을 개발하였습니다.`,
+    desc: `각종 블록체인 API를 쉽게 사용할 수 있는 가이드 플랫폼 웹을 개발하였습니다.`,
     image: '/portfolio/fplatform.png',
   },
-  {
-    id: 'wallet-refactor',
-    tags: ['vue.js'],
-    title: '전자지갑 웹 리팩토링 (jQuery → Vue.js)',
-    desc: `jQuery로 구현된 전자지갑 웹을 vue.js로 리팩토링하였습니다.`,
-    noImage: true,
-  },
-  {
-    id: 'patent',
-    tags: ['jQuery', 'spring boot'],
-    title: '특허권 조각투자 플랫폼 개발',
-    desc: `블록체인 기술을 활용하여 특허권리를 거래할수 있는 특허권 조각투자 플랫폼 웹을 개발하였습니다.`,
-    image: '/portfolio/ipnft.png',
-  },
-  {
-    id: 'nft-marketplace',
-    tags: ['jQuery', 'spring boot'],
-    title: '이더리움 전자지갑 + NFT 마켓플레이스 웹 개발',
-    desc: `사용자들이 NFT를 발행, 조회, 전송할 수 있는 기능을 제공하며, jQuery와 Spring Boot 기반의 웹을 개발하였습니다.`,
-    image: '/portfolio/wallet.png',
-  },
+  // {
+  //   id: 'wallet-refactor',
+  //   tags: ['vue.js'],
+  //   title: '전자지갑 웹 리팩토링 (jQuery → Vue.js)',
+  //   desc: `jQuery로 구현된 전자지갑 웹을 vue.js로 리팩토링하였습니다.`,
+  //   noImage: true,
+  // },
+  // {
+  //   id: 'patent',
+  //   tags: ['jQuery', 'spring boot'],
+  //   title: '특허권 조각투자 플랫폼 개발',
+  //   desc: `블록체인 기술을 활용하여 특허권리를 거래할수 있는 특허권 조각투자 플랫폼 웹을 개발하였습니다.`,
+  //   image: '/portfolio/ipnft.png',
+  // },
+  // {
+  //   id: 'nft-marketplace',
+  //   tags: ['jQuery', 'spring boot'],
+  //   title: '이더리움 전자지갑 + NFT 마켓플레이스 웹 개발',
+  //   desc: `사용자들이 NFT를 발행, 조회, 전송할 수 있는 기능을 제공하며, jQuery와 Spring Boot 기반의 웹을 개발하였습니다.`,
+  //   image: '/portfolio/wallet.png',
+  // },
 ]
 
 export function getTitleById(projectId: string) {

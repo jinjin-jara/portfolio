@@ -71,14 +71,14 @@ onMounted(() => {
                 </div>
                 <div class="grid lg:grid-cols-2 gap-4">
                     <ProjectCard v-for="project in filteredProjects" :key="project.id" :tags="project.tags"
-                        @click="openModal(project.id, project.title)" :no-image="project.noImage || false">
+                        @click="openModal(project.id, project.title)">
                         <template #title>
                             {{ project.title }}
                         </template>
                         <template #desc>
                             <span class="text-[0.9rem]" v-dompurify-html="project.desc" />
                         </template>
-                        <template #image v-if="!project.noImage">
+                        <template #image>
                             <img :src="project.image" />
                         </template>
                     </ProjectCard>
@@ -91,6 +91,8 @@ onMounted(() => {
             </template>
             <ProjectIncheon v-if="queryValue === 'incheontp'" />
             <ProjectFdid v-else-if="queryValue === 'did'" />
+            <ProjectBaas v-else-if="queryValue === 'baas'" />
+            <ProjectToken v-else-if="queryValue === 'token'" />
         </ProjectModal>
     </div>
 </template>

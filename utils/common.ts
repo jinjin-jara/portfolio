@@ -1,13 +1,13 @@
 import { useRouter } from 'vue-router'
 export const projects = [
-  {
-    id: 'incheontp',
-    tags: ['nuxt.js', 'minio', 'spring boot'],
-    title: '인천특구플랫폼 블록체인 플랫폼 개발',
-    desc: `개발자가 API를 쉽게 사용할 수 있는 API Developer 웹과, 트랜잭션 추적을 위한 모니터링 웹을 개발하였습니다.<br />
-         프로젝트의 전체 구축 및 운영에 투입되었습니다.`,
-    image: '/portfolio/incheontp.png',
-  },
+  // {
+  //   id: 'incheontp',
+  //   tags: ['nuxt.js', 'minio', 'spring boot'],
+  //   title: '인천특구플랫폼 블록체인 플랫폼 개발',
+  //   desc: `개발자가 API를 쉽게 사용할 수 있는 API Developer 웹과, 트랜잭션 추적을 위한 모니터링 웹을 개발하였습니다.<br />
+  //        프로젝트의 전체 구축 및 운영에 투입되었습니다.`,
+  //   image: '/portfolio/incheontp.png',
+  // },
   {
     id: 'did',
     tags: ['nuxt.js', 'pwa', 'swift UI', 'golang'],

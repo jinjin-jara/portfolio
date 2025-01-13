@@ -21,7 +21,7 @@ function closeModal() {
     router.push({ query: {} }) // 쿼리 값 제거
 }
 
-const tagOrder = ['nuxt.js', 'vue.js', 'swift UI', 'jQuery', 'minio', 'spring boot', 'pwa', 'golang']
+const tagOrder = ['nuxt.js', 'vue.js', 'pwa', 'swift UI', 'minio', 'spring boot','golang']
 
 // 선택된 태그에 맞게 필터링된 프로젝트
 const filteredProjects = computed(() =>

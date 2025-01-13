@@ -11,8 +11,8 @@ function closeModal() {
 
 const imageList: { src: string, title: string }[] = [
     {
-        title: '메인 화면',
-        src: '/portfolio/token1.png'
+        title: 'API Playground',
+        src: '/portfolio/baas1.png'
     },
     {
         title: '상품 상세페이지 및 거래화면',

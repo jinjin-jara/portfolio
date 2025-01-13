@@ -1,6 +1,6 @@
-import { ssrRenderComponent, ssrRenderAttrs, ssrRenderSlot, ssrInterpolate, ssrRenderClass, ssrRenderAttr, ssrRenderList, ssrRenderStyle, ssrGetDirectiveProps } from 'vue/server-renderer';
+import { ssrRenderComponent, ssrRenderAttrs, ssrRenderSlot, ssrInterpolate, ssrRenderClass, ssrRenderAttr, ssrRenderList, ssrGetDirectiveProps } from 'vue/server-renderer';
 import * as e$1 from 'vue';
-import { useSSRContext, defineComponent, ref, computed, onMounted, onUnmounted, h as h$1, Fragment, watchEffect, watch, provide, unref, inject, getCurrentInstance, Teleport, reactive, normalizeClass, withCtx, createVNode, mergeProps, renderSlot, cloneVNode, nextTick, openBlock, createBlock, createTextVNode, toDisplayString, createCommentVNode, renderList, resolveDirective, withDirectives, shallowRef } from 'vue';
+import { useSSRContext, defineComponent, ref, computed, onMounted, onUnmounted, h as h$1, Fragment, watchEffect, watch, provide, unref, inject, getCurrentInstance, Teleport, reactive, normalizeClass, withCtx, createVNode, mergeProps, renderSlot, cloneVNode, nextTick, openBlock, createBlock, createTextVNode, toDisplayString, createCommentVNode, renderList, resolveDirective, createSlots, withDirectives, shallowRef } from 'vue';
 import { _ as _export_sfc } from './_plugin-vue_export-helper-1tPrXgE0.mjs';
 import { p as publicAssetsURL } from '../routes/renderer.mjs';
 import { useRouter } from 'vue-router';
@@ -18,20 +18,20 @@ import 'unhead';
 import '@unhead/shared';
 import 'vue-dompurify-html';
 
-const _sfc_main$q = {};
-function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+const _sfc_main$l = {};
+function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
   _push(`<div${ssrRenderAttrs(_attrs)}>`);
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   _push(`</div>`);
 }
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
+const _sfc_setup$l = _sfc_main$l.setup;
+_sfc_main$l.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Page/Wrapper.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : undefined;
+  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : undefined;
 };
-const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$7]]);
-const _sfc_main$p = /* @__PURE__ */ defineComponent({
+const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["ssrRender", _sfc_ssrRender$8]]);
+const _sfc_main$k = /* @__PURE__ */ defineComponent({
   __name: "Section",
   __ssrInlineRender: true,
   props: {
@@ -51,38 +51,38 @@ const _sfc_main$p = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
+const _sfc_setup$k = _sfc_main$k.setup;
+_sfc_main$k.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Page/Section.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : undefined;
+  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : undefined;
 };
-const _sfc_main$o = {};
-function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
+const _sfc_main$j = {};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
   _push(`<div${ssrRenderAttrs(mergeProps({ class: "card duration-300 w-full rounded-xl bg-white primary-shadow border border-gray-300" }, _attrs))}>`);
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   _push(`</div>`);
 }
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
+const _sfc_setup$j = _sfc_main$j.setup;
+_sfc_main$j.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Card/index.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : undefined;
+  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : undefined;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$6]]);
-const _sfc_main$n = {};
-function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$7]]);
+const _sfc_main$i = {};
+function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
   _push(`<div${ssrRenderAttrs(mergeProps({ class: "w-full border-b-1 border-gray-300" }, _attrs))}></div>`);
 }
-const _sfc_setup$n = _sfc_main$n.setup;
-_sfc_main$n.setup = (props, ctx) => {
+const _sfc_setup$i = _sfc_main$i.setup;
+_sfc_main$i.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Border.vue");
-  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : undefined;
+  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : undefined;
 };
-const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$5]]);
-const _sfc_main$m = {};
-function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$6]]);
+const _sfc_main$h = {};
+function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
   const _component_Border = __nuxt_component_1$2;
   _push(`<div${ssrRenderAttrs(mergeProps({ class: "pt-8 flex flex-col" }, _attrs))}><div class="flex flex-col gap-6 pb-8">`);
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
@@ -90,14 +90,14 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
   _push(ssrRenderComponent(_component_Border, null, null, _parent));
   _push(`</div>`);
 }
-const _sfc_setup$m = _sfc_main$m.setup;
-_sfc_main$m.setup = (props, ctx) => {
+const _sfc_setup$h = _sfc_main$h.setup;
+_sfc_main$h.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Page/SmallSection.vue");
-  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : undefined;
+  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : undefined;
 };
-const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$4]]);
-const _sfc_main$l = /* @__PURE__ */ defineComponent({
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$5]]);
+const _sfc_main$g = /* @__PURE__ */ defineComponent({
   __name: "Title",
   __ssrInlineRender: true,
   props: {
@@ -131,13 +131,13 @@ const _sfc_main$l = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$l = _sfc_main$l.setup;
-_sfc_main$l.setup = (props, ctx) => {
+const _sfc_setup$g = _sfc_main$g.setup;
+_sfc_main$g.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Page/Title.vue");
-  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : undefined;
+  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : undefined;
 };
-const _sfc_main$k = /* @__PURE__ */ defineComponent({
+const _sfc_main$f = /* @__PURE__ */ defineComponent({
   __name: "Interview",
   __ssrInlineRender: true,
   props: {
@@ -148,7 +148,7 @@ const _sfc_main$k = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_Card = __nuxt_component_0;
+      const _component_Card = __nuxt_component_0$1;
       _push(ssrRenderComponent(_component_Card, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -173,13 +173,13 @@ const _sfc_main$k = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$k = _sfc_main$k.setup;
-_sfc_main$k.setup = (props, ctx) => {
+const _sfc_setup$f = _sfc_main$f.setup;
+_sfc_main$f.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Interview.vue");
-  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : undefined;
+  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : undefined;
 };
-const _sfc_main$j = /* @__PURE__ */ defineComponent({
+const _sfc_main$e = /* @__PURE__ */ defineComponent({
   __name: "Tag",
   __ssrInlineRender: true,
   props: {
@@ -200,11 +200,11 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$j = _sfc_main$j.setup;
-_sfc_main$j.setup = (props, ctx) => {
+const _sfc_setup$e = _sfc_main$e.setup;
+_sfc_main$e.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Tag.vue");
-  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : undefined;
+  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : undefined;
 };
 function t$4(e2) {
   typeof queueMicrotask == "function" ? queueMicrotask(e2) : Promise.resolve().then(e2).catch((o2) => setTimeout(() => {
@@ -1149,7 +1149,7 @@ let W = N$3.RenderStrategy, he = defineComponent({ props: { as: { type: [Object,
     return A$2({ ourProps: { ...y2, as: "template" }, theirProps: {}, slot: {}, slots: { ...s3, default: () => [h$1(ce, { onBeforeEnter: () => t2("beforeEnter"), onAfterEnter: () => t2("afterEnter"), onBeforeLeave: () => t2("beforeLeave"), onAfterLeave: () => t2("afterLeave"), ...a2, ...y2, ...d2 }, s3.default)] }, attrs: {}, features: W, visible: r2.value === "visible", name: "Transition" });
   };
 } });
-const _sfc_main$i = /* @__PURE__ */ defineComponent({
+const _sfc_main$d = /* @__PURE__ */ defineComponent({
   __name: "Alert",
   __ssrInlineRender: true,
   props: {
@@ -1485,11 +1485,11 @@ const _sfc_main$i = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$i = _sfc_main$i.setup;
-_sfc_main$i.setup = (props, ctx) => {
+const _sfc_setup$d = _sfc_main$d.setup;
+_sfc_main$d.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Alert.vue");
-  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : undefined;
+  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : undefined;
 };
 const _imports_0$3 = publicAssetsURL("/portfolio/profile2.png");
 const _imports_1$1 = publicAssetsURL("/portfolio/developer.png");
@@ -1498,7 +1498,7 @@ const _imports_3$1 = publicAssetsURL("/portfolio/interview.png");
 const _imports_4$1 = publicAssetsURL("/portfolio/finger.png");
 const _imports_5$1 = publicAssetsURL("/portfolio/ssn.png");
 const email = "jinjinjara0610@gmail.com";
-const _sfc_main$h = /* @__PURE__ */ defineComponent({
+const _sfc_main$c = /* @__PURE__ */ defineComponent({
   __name: "AboutMe",
   __ssrInlineRender: true,
   setup(__props) {
@@ -1517,14 +1517,14 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
       });
     }
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_PageSection = _sfc_main$p;
-      const _component_Card = __nuxt_component_0;
+      const _component_PageSection = _sfc_main$k;
+      const _component_Card = __nuxt_component_0$1;
       const _component_Border = __nuxt_component_1$2;
-      const _component_PageSmallSection = __nuxt_component_1$1;
-      const _component_PageTitle = _sfc_main$l;
-      const _component_Interview = _sfc_main$k;
-      const _component_Tag = _sfc_main$j;
-      const _component_Alert = _sfc_main$i;
+      const _component_PageSmallSection = __nuxt_component_0;
+      const _component_PageTitle = _sfc_main$g;
+      const _component_Interview = _sfc_main$f;
+      const _component_Tag = _sfc_main$e;
+      const _component_Alert = _sfc_main$d;
       _push(ssrRenderComponent(_component_PageSection, mergeProps({ "section-id": "about-me" }, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -1961,14 +1961,14 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$h = _sfc_main$h.setup;
-_sfc_main$h.setup = (props, ctx) => {
+const _sfc_setup$c = _sfc_main$c.setup;
+_sfc_main$c.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/AboutMe.vue");
-  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : undefined;
+  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : undefined;
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-750ddfc8"]]);
-const _sfc_main$g = /* @__PURE__ */ defineComponent({
+const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-750ddfc8"]]);
+const _sfc_main$b = /* @__PURE__ */ defineComponent({
   __name: "Component",
   __ssrInlineRender: true,
   props: {
@@ -1985,13 +1985,13 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$g = _sfc_main$g.setup;
-_sfc_main$g.setup = (props, ctx) => {
+const _sfc_setup$b = _sfc_main$b.setup;
+_sfc_main$b.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Skills/Component.vue");
-  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : undefined;
+  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : undefined;
 };
-const _sfc_main$f = /* @__PURE__ */ defineComponent({
+const _sfc_main$a = /* @__PURE__ */ defineComponent({
   __name: "Card",
   __ssrInlineRender: true,
   props: {
@@ -2020,7 +2020,7 @@ const _sfc_main$f = /* @__PURE__ */ defineComponent({
       }
     });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_Card = __nuxt_component_0;
+      const _component_Card = __nuxt_component_0$1;
       _push(ssrRenderComponent(_component_Card, mergeProps({ class: "flex flex-row px-3 py-2 items-center justify-between" }, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -2063,11 +2063,11 @@ const _sfc_main$f = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$f = _sfc_main$f.setup;
-_sfc_main$f.setup = (props, ctx) => {
+const _sfc_setup$a = _sfc_main$a.setup;
+_sfc_main$a.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Skills/Card.vue");
-  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : undefined;
+  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : undefined;
 };
 const _imports_0$2 = publicAssetsURL("/portfolio/skills.png");
 const _imports_1 = publicAssetsURL("/portfolio/javascript.png");
@@ -2085,12 +2085,12 @@ const _imports_12 = publicAssetsURL("/portfolio/jira.png");
 const _imports_13 = publicAssetsURL("/portfolio/gitlab.png");
 const _imports_14 = publicAssetsURL("/portfolio/github.png");
 const _imports_15 = publicAssetsURL("/portfolio/notion.png");
-const _sfc_main$e = {};
-function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
-  const _component_PageSection = _sfc_main$p;
-  const _component_PageTitle = _sfc_main$l;
-  const _component_SkillsComponent = _sfc_main$g;
-  const _component_SkillsCard = _sfc_main$f;
+const _sfc_main$9 = {};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
+  const _component_PageSection = _sfc_main$k;
+  const _component_PageTitle = _sfc_main$g;
+  const _component_SkillsComponent = _sfc_main$b;
+  const _component_SkillsCard = _sfc_main$a;
   const _component_Border = __nuxt_component_1$2;
   _push(ssrRenderComponent(_component_PageSection, mergeProps({ "section-id": "skills" }, _attrs), {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -2678,15 +2678,15 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$e = _sfc_main$e.setup;
-_sfc_main$e.setup = (props, ctx) => {
+const _sfc_setup$9 = _sfc_main$9.setup;
+_sfc_main$9.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Skills/index.vue");
-  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : undefined;
+  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : undefined;
 };
-const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["ssrRender", _sfc_ssrRender$3]]);
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$4]]);
 const _imports_0$1 = publicAssetsURL("/portfolio/archive.png");
-const _sfc_main$d = /* @__PURE__ */ defineComponent({
+const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "Card",
   __ssrInlineRender: true,
   props: {
@@ -2701,8 +2701,8 @@ const _sfc_main$d = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_Card = __nuxt_component_0;
-      const _component_Tag = _sfc_main$j;
+      const _component_Card = __nuxt_component_0$1;
+      const _component_Tag = _sfc_main$e;
       _push(ssrRenderComponent(_component_Card, mergeProps({ class: "h-100 overflow-hidden cursor-pointer hover:bg-zinc-200 duration-300 transition-colors" }, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -2772,13 +2772,13 @@ const _sfc_main$d = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$d = _sfc_main$d.setup;
-_sfc_main$d.setup = (props, ctx) => {
+const _sfc_setup$8 = _sfc_main$8.setup;
+_sfc_main$8.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Card.vue");
-  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : undefined;
+  return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : undefined;
 };
-const _sfc_main$c = /* @__PURE__ */ defineComponent({
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "index",
   __ssrInlineRender: true,
   props: {
@@ -3039,13 +3039,24 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$c = _sfc_main$c.setup;
-_sfc_main$c.setup = (props, ctx) => {
+const _sfc_setup$7 = _sfc_main$7.setup;
+_sfc_main$7.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Modal/index.vue");
-  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : undefined;
+  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : undefined;
 };
-const _sfc_main$b = /* @__PURE__ */ defineComponent({
+const _sfc_main$6 = {};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
+  _push(`<div${ssrRenderAttrs(_attrs)}> incheon-tp </div>`);
+}
+const _sfc_setup$6 = _sfc_main$6.setup;
+_sfc_main$6.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Incheon.vue");
+  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : undefined;
+};
+const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$3]]);
+const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "Summary",
   __ssrInlineRender: true,
   props: {
@@ -3056,7 +3067,7 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_Tag = _sfc_main$j;
+      const _component_Tag = _sfc_main$e;
       const _component_Border = __nuxt_component_1$2;
       _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col gap-4 mt-6" }, _attrs))}><div class="flex flex-row"><p class="text-gray-600 min-w-40 w-1/4">Skills and Tools</p>`);
       if (__props.tags.length > 0) {
@@ -3083,16 +3094,16 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_setup$b = _sfc_main$b.setup;
-_sfc_main$b.setup = (props, ctx) => {
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Modal/Summary.vue");
-  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : undefined;
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : undefined;
 };
-const _sfc_main$a = {};
+const _sfc_main$4 = {};
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
-  const _component_PageSmallSection = __nuxt_component_1$1;
-  const _component_PageTitle = _sfc_main$l;
+  const _component_PageSmallSection = __nuxt_component_0;
+  const _component_PageTitle = _sfc_main$g;
   _push(ssrRenderComponent(_component_PageSmallSection, _attrs, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -3136,17 +3147,17 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
     _: 3
   }, _parent));
 }
-const _sfc_setup$a = _sfc_main$a.setup;
-_sfc_main$a.setup = (props, ctx) => {
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Modal/Outline.vue");
-  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : undefined;
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : undefined;
 };
-const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["ssrRender", _sfc_ssrRender$2]]);
-const _sfc_main$9 = {};
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$2]]);
+const _sfc_main$3 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
-  const _component_PageSmallSection = __nuxt_component_1$1;
-  const _component_PageTitle = _sfc_main$l;
+  const _component_PageSmallSection = __nuxt_component_0;
+  const _component_PageTitle = _sfc_main$g;
   _push(ssrRenderComponent(_component_PageSmallSection, _attrs, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -3156,10 +3167,10 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
         }, {
           default: withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<p${_scopeId2}>\u{1F4CC} \uBCF8\uC778 \uAD6C\uD604 \uAE30\uB2A5</p>`);
+              _push3(`<p${_scopeId2}>\u{1F4CC} \uAD6C\uD604 \uAE30\uB2A5</p>`);
             } else {
               return [
-                createVNode("p", null, "\u{1F4CC} \uBCF8\uC778 \uAD6C\uD604 \uAE30\uB2A5")
+                createVNode("p", null, "\u{1F4CC} \uAD6C\uD604 \uAE30\uB2A5")
               ];
             }
           }),
@@ -3175,7 +3186,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
             class: "pb-0"
           }, {
             default: withCtx(() => [
-              createVNode("p", null, "\u{1F4CC} \uBCF8\uC778 \uAD6C\uD604 \uAE30\uB2A5")
+              createVNode("p", null, "\u{1F4CC} \uAD6C\uD604 \uAE30\uB2A5")
             ]),
             _: 1
           }),
@@ -3190,67 +3201,178 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     _: 3
   }, _parent));
 }
-const _sfc_setup$9 = _sfc_main$9.setup;
-_sfc_main$9.setup = (props, ctx) => {
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Modal/Function.vue");
-  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : undefined;
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : undefined;
 };
-const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$1]]);
-const _sfc_main$8 = {};
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]);
+const _sfc_main$2 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_PageSmallSection = __nuxt_component_1$1;
-  const _component_PageTitle = _sfc_main$l;
-  _push(ssrRenderComponent(_component_PageSmallSection, _attrs, {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
+  const _component_ProjectModalSummary = _sfc_main$5;
+  const _component_ProjectModalOutline = __nuxt_component_1;
+  const _component_Tag = _sfc_main$e;
+  const _component_ProjectModalFunction = __nuxt_component_3;
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col" }, _attrs))}>`);
+  _push(ssrRenderComponent(_component_ProjectModalSummary, { tags: ["nuxt.js", "pwa", "swift UI", "golang", "docker"] }, {
+    period: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(ssrRenderComponent(_component_PageTitle, {
-          size: "sm",
-          class: "pb-0"
-        }, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<p${_scopeId2}>\u{1F5BC}\uFE0F \uC774\uBBF8\uC9C0</p><span class="text-base text-gray-600 font-normal"${_scopeId2}>\uD074\uB9AD\uD558\uBA74 \uD070 \uC774\uBBF8\uC9C0\uB85C \uC5F4\uB78C\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.</span>`);
-            } else {
-              return [
-                createVNode("p", null, "\u{1F5BC}\uFE0F \uC774\uBBF8\uC9C0"),
-                createVNode("span", { class: "text-base text-gray-600 font-normal" }, "\uD074\uB9AD\uD558\uBA74 \uD070 \uC774\uBBF8\uC9C0\uB85C \uC5F4\uB78C\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.")
-              ];
-            }
-          }),
-          _: 1
-        }, _parent2, _scopeId));
-        _push2(`<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2"${_scopeId}>`);
-        ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
-        _push2(`</div>`);
+        _push2(` 2024.02 ~ 2024.09 `);
       } else {
         return [
-          createVNode(_component_PageTitle, {
-            size: "sm",
-            class: "pb-0"
-          }, {
-            default: withCtx(() => [
-              createVNode("p", null, "\u{1F5BC}\uFE0F \uC774\uBBF8\uC9C0"),
-              createVNode("span", { class: "text-base text-gray-600 font-normal" }, "\uD074\uB9AD\uD558\uBA74 \uD070 \uC774\uBBF8\uC9C0\uB85C \uC5F4\uB78C\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.")
-            ]),
-            _: 1
-          }),
-          createVNode("div", { class: "grid md:grid-cols-2 lg:grid-cols-3 gap-2" }, [
-            renderSlot(_ctx.$slots, "default")
+          createTextVNode(" 2024.02 ~ 2024.09 ")
+        ];
+      }
+    }),
+    team: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(` \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 2\uBA85 `);
+      } else {
+        return [
+          createTextVNode(" \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 2\uBA85 ")
+        ];
+      }
+    }),
+    part: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(` \uC6F9 \uAC1C\uBC1C, \uC6F9\uC571(ios) \uAC1C\uBC1C, did library \uAC1C\uBC1C \uBC31\uC5C5 \uC5C5\uBB34 `);
+      } else {
+        return [
+          createTextVNode(" \uC6F9 \uAC1C\uBC1C, \uC6F9\uC571(ios) \uAC1C\uBC1C, did library \uAC1C\uBC1C \uBC31\uC5C5 \uC5C5\uBB34 ")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_ProjectModalOutline, null, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<li${_scopeId}>PWA \uAE30\uBC18\uC758 \uC6F9\uC0AC\uC774\uD2B8\uB85C \uC2DC\uC791\uD558\uC5EC, \uC774\uD6C4 \uC0AC\uC6A9\uC790 \uC694\uAD6C\uC5D0 \uB530\uB77C iOS \uC6F9\uC571 \uBC84\uC804\uC73C\uB85C \uD655\uC7A5 \uAC1C\uBC1C</li><li${_scopeId}>\uC0AC\uC6A9\uC790\uAC00 DID<span class="text-gray-500"${_scopeId}>(Decentralized Identity, \uBD84\uC0B0\uC2E0\uC6D0\uD655\uC778)</span> \uBC0F VC<span class="text-gray-500"${_scopeId}>(\uAC80\uC99D \uAC00\uB2A5\uD55C \uC790\uACA9 \uC99D\uBA85)</span>\uB97C \uBC1C\uAE09, \uC800\uC7A5, \uC870\uD68C\uD560 \uC218 \uC788\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5 <ul class="list-circle pl-5"${_scopeId}><li${_scopeId}>`);
+        _push2(ssrRenderComponent(_component_Tag, {
+          "is-skill": true,
+          text: "cypto.js"
+        }, null, _parent2, _scopeId));
+        _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD55C \uB370\uC774\uD130 \uC554\uD638\uD654 \uC9C0\uC6D0</li><li${_scopeId}>Index DB\uB97C \uC0AC\uC6A9\uD558\uC5EC \uBCF5\uC7A1\uD55C \uAD6C\uC870\uC758 DID, VC \uB370\uC774\uD130 \uC800\uC7A5</li></ul></li><li${_scopeId}>\uBCF4\uC720\uD558\uACE0 \uC788\uB294 VC\uB85C VP<span class="text-gray-500"${_scopeId}>(\uAC80\uC99D \uAC00\uB2A5\uD55C \uD504\uB808\uC820\uD14C\uC774\uC158)</span>\uC744 \uC0DD\uC131\uD558\uC5EC \uC778\uC99D\uAE30\uAD00\uC5D0 \uAC80\uC99D \uC694\uCCAD\uD558\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5 <ul class="list-circle pl-5"${_scopeId}><li${_scopeId}>ex) \uC0AC\uC6D0\uC99D \uBC0F \uCD9C\uC785\uC99D</li><li${_scopeId}>`);
+        _push2(ssrRenderComponent(_component_Tag, {
+          "is-skill": true,
+          text: "vue-qrcode"
+        }, null, _parent2, _scopeId));
+        _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC VP \uB370\uC774\uD130\uB97C QR code\uB85C \uC0DD\uC131 \uBC0F \uB9AC\uB529\uD558\uB294 \uAE30\uB2A5 \uAD6C\uD604</li></ul></li>`);
+      } else {
+        return [
+          createVNode("li", null, "PWA \uAE30\uBC18\uC758 \uC6F9\uC0AC\uC774\uD2B8\uB85C \uC2DC\uC791\uD558\uC5EC, \uC774\uD6C4 \uC0AC\uC6A9\uC790 \uC694\uAD6C\uC5D0 \uB530\uB77C iOS \uC6F9\uC571 \uBC84\uC804\uC73C\uB85C \uD655\uC7A5 \uAC1C\uBC1C"),
+          createVNode("li", null, [
+            createTextVNode("\uC0AC\uC6A9\uC790\uAC00 DID"),
+            createVNode("span", { class: "text-gray-500" }, "(Decentralized Identity, \uBD84\uC0B0\uC2E0\uC6D0\uD655\uC778)"),
+            createTextVNode(" \uBC0F VC"),
+            createVNode("span", { class: "text-gray-500" }, "(\uAC80\uC99D \uAC00\uB2A5\uD55C \uC790\uACA9 \uC99D\uBA85)"),
+            createTextVNode("\uB97C \uBC1C\uAE09, \uC800\uC7A5, \uC870\uD68C\uD560 \uC218 \uC788\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5 "),
+            createVNode("ul", { class: "list-circle pl-5" }, [
+              createVNode("li", null, [
+                createVNode(_component_Tag, {
+                  "is-skill": true,
+                  text: "cypto.js"
+                }),
+                createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD55C \uB370\uC774\uD130 \uC554\uD638\uD654 \uC9C0\uC6D0")
+              ]),
+              createVNode("li", null, "Index DB\uB97C \uC0AC\uC6A9\uD558\uC5EC \uBCF5\uC7A1\uD55C \uAD6C\uC870\uC758 DID, VC \uB370\uC774\uD130 \uC800\uC7A5")
+            ])
+          ]),
+          createVNode("li", null, [
+            createTextVNode("\uBCF4\uC720\uD558\uACE0 \uC788\uB294 VC\uB85C VP"),
+            createVNode("span", { class: "text-gray-500" }, "(\uAC80\uC99D \uAC00\uB2A5\uD55C \uD504\uB808\uC820\uD14C\uC774\uC158)"),
+            createTextVNode("\uC744 \uC0DD\uC131\uD558\uC5EC \uC778\uC99D\uAE30\uAD00\uC5D0 \uAC80\uC99D \uC694\uCCAD\uD558\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5 "),
+            createVNode("ul", { class: "list-circle pl-5" }, [
+              createVNode("li", null, "ex) \uC0AC\uC6D0\uC99D \uBC0F \uCD9C\uC785\uC99D"),
+              createVNode("li", null, [
+                createVNode(_component_Tag, {
+                  "is-skill": true,
+                  text: "vue-qrcode"
+                }),
+                createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC VP \uB370\uC774\uD130\uB97C QR code\uB85C \uC0DD\uC131 \uBC0F \uB9AC\uB529\uD558\uB294 \uAE30\uB2A5 \uAD6C\uD604")
+              ])
+            ])
           ])
         ];
       }
     }),
-    _: 3
+    _: 1
   }, _parent));
+  _push(ssrRenderComponent(_component_ProjectModalFunction, null, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<li${_scopeId}>index DB, `);
+        _push2(ssrRenderComponent(_component_Tag, {
+          "is-skill": true,
+          text: "dexie.js"
+        }, null, _parent2, _scopeId));
+        _push2(`\uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC DID\uC640 VC\uC640 \uAC19\uC774 \uBCF5\uC7A1\uD55C JSON \uD615\uD0DC\uC758 \uB370\uC774\uD130\uB97C \uC800\uC7A5 \uBC0F \uD578\uB4E4\uB9C1\uC774 \uAC00\uB2A5\uD558\uB3C4\uB85D \uAD6C\uD604 <ul class="my-2"${_scopeId}><div class="bg-zinc-200 px-3 py-2 rounded-lg"${_scopeId}><p class="mb-4 font-semibold"${_scopeId}>\u{1F4A1} \uB85C\uCEEC\uC2A4\uD1A0\uB9AC\uC9C0\uB098 \uC138\uC158\uC2A4\uD1A0\uB9AC\uC9C0\uAC00 \uC544\uB2CC index DB\uB97C \uC0AC\uC6A9\uD55C \uC774\uC720</p><p class="break-words"${_scopeId}>DID\uC640 VC\uC640 \uAC19\uC774 \uBCF5\uC7A1\uD55C JSON \uD615\uD0DC\uC758 \uB370\uC774\uD130\uB97C \uC800\uC7A5\uD558\uACE0 \uAD00\uB9AC\uD558\uAE30 \uC704\uD574 IndexDB\uB97C \uC120\uD0DD\uD588\uC2B5\uB2C8\uB2E4.<br${_scopeId}> Index DB\uB294 \uB85C\uCEEC\uC2A4\uD1A0\uB9AC\uC9C0\uB098 \uC138\uC158\uC2A4\uD1A0\uB9AC\uC9C0\uBCF4\uB2E4 \uAD6C\uC870\uD654\uB41C \uB370\uC774\uD130 \uAD00\uB9AC\uC640 \uB300\uB7C9 \uB370\uC774\uD130 \uCC98\uB9AC\uC5D0 \uC720\uB9AC\uD569\uB2C8\uB2E4.</p><p class="mt-2 text-blue-500 cursor-pointer"${_scopeId}>\uAD00\uB828 \uBE14\uB85C\uADF8 \uD3EC\uC2A4\uD305 \uBCF4\uAE30</p></div></ul></li><li${_scopeId}>`);
+        _push2(ssrRenderComponent(_component_Tag, {
+          "is-skill": true,
+          text: "cypto.js"
+        }, null, _parent2, _scopeId));
+        _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC \uC0AC\uC6A9\uC790\uAC00 \uC785\uB825\uD55C \uD540\uBC88\uD638\uB85C DID \uBC0F VC \uB370\uC774\uD130\uB97C \uC554\uD638\uD654 <ul class="list-circle pl-5"${_scopeId}><li${_scopeId}> \uBE0C\uB77C\uC6B0\uC800\uC5D0 \uC800\uC7A5\uB41C DID \uBC0F VC\uB97C \uC870\uD68C\uD558\uACE0\uC790 \uD560 \uB54C \uD540\uBC88\uD638 \uC785\uB825 \uC694\uAD6C, \uD540\uBC88\uD638 \uBD88\uC77C\uCE58 \uC2DC \uC870\uD68C \uBD88\uAC00 </li></ul></li><li${_scopeId}>`);
+        _push2(ssrRenderComponent(_component_Tag, {
+          "is-skill": true,
+          text: "vue-qrcode"
+        }, null, _parent2, _scopeId));
+        _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC VP JSON \uB370\uC774\uD130\uB97C QR code\uB85C \uC0DD\uC131,<br${_scopeId}>QR reader\uB97C \uD1B5\uD574 \uB4E4\uC5B4\uC628 VP \uB370\uC774\uD130 \uD30C\uC2F1 \uD6C4 \uAC80\uC99D \uAE30\uB2A5 \uAD6C\uD604</li>`);
+      } else {
+        return [
+          createVNode("li", null, [
+            createTextVNode("index DB, "),
+            createVNode(_component_Tag, {
+              "is-skill": true,
+              text: "dexie.js"
+            }),
+            createTextVNode("\uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC DID\uC640 VC\uC640 \uAC19\uC774 \uBCF5\uC7A1\uD55C JSON \uD615\uD0DC\uC758 \uB370\uC774\uD130\uB97C \uC800\uC7A5 \uBC0F \uD578\uB4E4\uB9C1\uC774 \uAC00\uB2A5\uD558\uB3C4\uB85D \uAD6C\uD604 "),
+            createVNode("ul", { class: "my-2" }, [
+              createVNode("div", { class: "bg-zinc-200 px-3 py-2 rounded-lg" }, [
+                createVNode("p", { class: "mb-4 font-semibold" }, "\u{1F4A1} \uB85C\uCEEC\uC2A4\uD1A0\uB9AC\uC9C0\uB098 \uC138\uC158\uC2A4\uD1A0\uB9AC\uC9C0\uAC00 \uC544\uB2CC index DB\uB97C \uC0AC\uC6A9\uD55C \uC774\uC720"),
+                createVNode("p", { class: "break-words" }, [
+                  createTextVNode("DID\uC640 VC\uC640 \uAC19\uC774 \uBCF5\uC7A1\uD55C JSON \uD615\uD0DC\uC758 \uB370\uC774\uD130\uB97C \uC800\uC7A5\uD558\uACE0 \uAD00\uB9AC\uD558\uAE30 \uC704\uD574 IndexDB\uB97C \uC120\uD0DD\uD588\uC2B5\uB2C8\uB2E4."),
+                  createVNode("br"),
+                  createTextVNode(" Index DB\uB294 \uB85C\uCEEC\uC2A4\uD1A0\uB9AC\uC9C0\uB098 \uC138\uC158\uC2A4\uD1A0\uB9AC\uC9C0\uBCF4\uB2E4 \uAD6C\uC870\uD654\uB41C \uB370\uC774\uD130 \uAD00\uB9AC\uC640 \uB300\uB7C9 \uB370\uC774\uD130 \uCC98\uB9AC\uC5D0 \uC720\uB9AC\uD569\uB2C8\uB2E4.")
+                ]),
+                createVNode("p", { class: "mt-2 text-blue-500 cursor-pointer" }, "\uAD00\uB828 \uBE14\uB85C\uADF8 \uD3EC\uC2A4\uD305 \uBCF4\uAE30")
+              ])
+            ])
+          ]),
+          createVNode("li", null, [
+            createVNode(_component_Tag, {
+              "is-skill": true,
+              text: "cypto.js"
+            }),
+            createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC \uC0AC\uC6A9\uC790\uAC00 \uC785\uB825\uD55C \uD540\uBC88\uD638\uB85C DID \uBC0F VC \uB370\uC774\uD130\uB97C \uC554\uD638\uD654 "),
+            createVNode("ul", { class: "list-circle pl-5" }, [
+              createVNode("li", null, " \uBE0C\uB77C\uC6B0\uC800\uC5D0 \uC800\uC7A5\uB41C DID \uBC0F VC\uB97C \uC870\uD68C\uD558\uACE0\uC790 \uD560 \uB54C \uD540\uBC88\uD638 \uC785\uB825 \uC694\uAD6C, \uD540\uBC88\uD638 \uBD88\uC77C\uCE58 \uC2DC \uC870\uD68C \uBD88\uAC00 ")
+            ])
+          ]),
+          createVNode("li", null, [
+            createVNode(_component_Tag, {
+              "is-skill": true,
+              text: "vue-qrcode"
+            }),
+            createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC VP JSON \uB370\uC774\uD130\uB97C QR code\uB85C \uC0DD\uC131,"),
+            createVNode("br"),
+            createTextVNode("QR reader\uB97C \uD1B5\uD574 \uB4E4\uC5B4\uC628 VP \uB370\uC774\uD130 \uD30C\uC2F1 \uD6C4 \uAC80\uC99D \uAE30\uB2A5 \uAD6C\uD604")
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</div>`);
 }
-const _sfc_setup$8 = _sfc_main$8.setup;
-_sfc_main$8.setup = (props, ctx) => {
+const _sfc_setup$2 = _sfc_main$2.setup;
+_sfc_main$2.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Modal/Gallery/index.vue");
-  return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : undefined;
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Fdid.vue");
+  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : undefined;
 };
-const __nuxt_component_6 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender]]);
+const __nuxt_component_5 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
+const _imports_0 = publicAssetsURL("/portfolio/project.png");
 const projects = [
   {
     id: "incheontp",
@@ -3280,1379 +3402,29 @@ const projects = [
     title: "Baas(Blockchain as a Service) \uC6F9 \uD50C\uB7AB\uD3FC \uAC1C\uBC1C",
     desc: `\uBE44\uC0C1\uC7A5 \uD1A0\uD070\uC744 \uAC70\uB798\uD560 \uC218 \uC788\uB294 \uAC70\uB798 \uD50C\uB7AB\uD3FC \uC6F9\uACFC \uD2B8\uB79C\uC7AD\uC158\uC744 \uCD94\uC801\uD560 \uC218 \uC788\uB294 \uBAA8\uB2C8\uD130\uB9C1 \uC6F9\uC744 \uAC1C\uBC1C\uD558\uC600\uC2B5\uB2C8\uB2E4.`,
     image: "/portfolio/fplatform.png"
+  },
+  {
+    id: "wallet-refactor",
+    tags: ["vue.js"],
+    title: "\uC804\uC790\uC9C0\uAC11 \uC6F9 \uB9AC\uD329\uD1A0\uB9C1 (jQuery \u2192 Vue.js)",
+    desc: `jQuery\uB85C \uAD6C\uD604\uB41C \uC804\uC790\uC9C0\uAC11 \uC6F9\uC744 vue.js\uB85C \uB9AC\uD329\uD1A0\uB9C1\uD558\uC600\uC2B5\uB2C8\uB2E4.`,
+    noImage: true
+  },
+  {
+    id: "patent",
+    tags: ["jQuery", "spring boot"],
+    title: "\uD2B9\uD5C8\uAD8C \uC870\uAC01\uD22C\uC790 \uD50C\uB7AB\uD3FC \uAC1C\uBC1C",
+    desc: `\uBE14\uB85D\uCCB4\uC778 \uAE30\uC220\uC744 \uD65C\uC6A9\uD558\uC5EC \uD2B9\uD5C8\uAD8C\uB9AC\uB97C \uAC70\uB798\uD560\uC218 \uC788\uB294 \uD2B9\uD5C8\uAD8C \uC870\uAC01\uD22C\uC790 \uD50C\uB7AB\uD3FC \uC6F9\uC744 \uAC1C\uBC1C\uD558\uC600\uC2B5\uB2C8\uB2E4.`,
+    image: "/portfolio/ipnft.png"
+  },
+  {
+    id: "nft-marketplace",
+    tags: ["jQuery", "spring boot"],
+    title: "\uC774\uB354\uB9AC\uC6C0 \uC804\uC790\uC9C0\uAC11 + NFT \uB9C8\uCF13\uD50C\uB808\uC774\uC2A4 \uC6F9 \uAC1C\uBC1C",
+    desc: `\uC0AC\uC6A9\uC790\uB4E4\uC774 NFT\uB97C \uBC1C\uD589, \uC870\uD68C, \uC804\uC1A1\uD560 \uC218 \uC788\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5\uD558\uBA70, jQuery\uC640 Spring Boot \uAE30\uBC18\uC758 \uC6F9\uC744 \uAC1C\uBC1C\uD558\uC600\uC2B5\uB2C8\uB2E4.`,
+    image: "/portfolio/wallet.png"
   }
-  // {
-  //   id: 'wallet-refactor',
-  //   tags: ['vue.js'],
-  //   title: '전자지갑 웹 리팩토링 (jQuery → Vue.js)',
-  //   desc: `jQuery로 구현된 전자지갑 웹을 vue.js로 리팩토링하였습니다.`,
-  //   noImage: true,
-  // },
 ];
-function moveToWeb(url) {
-  (undefined).open(url);
-}
-const _sfc_main$7 = /* @__PURE__ */ defineComponent({
-  __name: "Incheon",
-  __ssrInlineRender: true,
-  setup(__props) {
-    const selectedItemSrc = ref("");
-    computed(() => !!selectedItemSrc.value);
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_ProjectModalSummary = _sfc_main$b;
-      const _component_PageSmallSection = __nuxt_component_1$1;
-      const _component_PageTitle = _sfc_main$l;
-      const _component_ProjectModalOutline = __nuxt_component_3;
-      const _component_Tag = _sfc_main$j;
-      const _component_ProjectModalFunction = __nuxt_component_4;
-      const _component_ProjectModalGallery = __nuxt_component_6;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col" }, _attrs))}>`);
-      _push(ssrRenderComponent(_component_ProjectModalSummary, { tags: ["nuxt.js", "minio", "spring boot"] }, {
-        period: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` 2024.10 ~ 2024.12 `);
-          } else {
-            return [
-              createTextVNode(" 2024.10 ~ 2024.12 ")
-            ];
-          }
-        }),
-        team: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 1\uBA85 `);
-          } else {
-            return [
-              createTextVNode(" \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 1\uBA85 ")
-            ];
-          }
-        }),
-        part: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<p${_scopeId}> UI/UX \uB514\uC790\uC778 \uBC0F \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C <span class="text-gray-500 lg:text-base text-sm"${_scopeId}>(100%)</span><br${_scopeId}> \uD504\uB85C\uC81D\uD2B8 \uC6B4\uC601\uD658\uACBD \uC138\uD305 \uBC0F \uBC30\uD3EC <span class="text-gray-500 lg:text-base text-sm"${_scopeId}>(100%)</span></p>`);
-          } else {
-            return [
-              createVNode("p", null, [
-                createTextVNode(" UI/UX \uB514\uC790\uC778 \uBC0F \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C "),
-                createVNode("span", { class: "text-gray-500 lg:text-base text-sm" }, "(100%)"),
-                createVNode("br"),
-                createTextVNode(" \uD504\uB85C\uC81D\uD2B8 \uC6B4\uC601\uD658\uACBD \uC138\uD305 \uBC0F \uBC30\uD3EC "),
-                createVNode("span", { class: "text-gray-500 lg:text-base text-sm" }, "(100%)")
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_PageSmallSection, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_component_PageTitle, {
-              size: "sm",
-              class: "pb-0"
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(`<p${_scopeId2}>\u{1F517} \uAD00\uB828 \uB9C1\uD06C</p>`);
-                } else {
-                  return [
-                    createVNode("p", null, "\u{1F517} \uAD00\uB828 \uB9C1\uD06C")
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(`<div class="flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"${_scopeId}><p class="flex flex-row items-center flex-wrap"${_scopeId}><img style="${ssrRenderStyle({ "width": "1.2em", "height": "1.2em", "border-radius": "3px", "vertical-align": "-0.15em", "margin-right": "0.3em" })}" src="https://www.biplex.or.kr/user/images/favicon.ico"${_scopeId}><span class="font-medium"${_scopeId}>\uC778\uCC9C\uBE14\uB85D\uCCB4\uC778\uAE30\uC220\uD601\uC2E0\uC9C0\uC6D0\uC13C\uD130 - \uC12C\uD328\uC2A4 \uC0AC\uC5C5 \uC18C\uAC1C \uD398\uC774\uC9C0 \uBC14\uB85C\uAC00\uAE30</span></p><span class="text-sm"${_scopeId}>https://www.biplex.or.kr/user/contents.php?sq=43</span></div>`);
-          } else {
-            return [
-              createVNode(_component_PageTitle, {
-                size: "sm",
-                class: "pb-0"
-              }, {
-                default: withCtx(() => [
-                  createVNode("p", null, "\u{1F517} \uAD00\uB828 \uB9C1\uD06C")
-                ]),
-                _: 1
-              }),
-              createVNode("div", { class: "flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg" }, [
-                createVNode("p", {
-                  onClick: ($event) => unref(moveToWeb)(`https://www.biplex.or.kr/user/contents.php?sq=43`),
-                  class: "flex flex-row items-center flex-wrap"
-                }, [
-                  createVNode("img", {
-                    style: { "width": "1.2em", "height": "1.2em", "border-radius": "3px", "vertical-align": "-0.15em", "margin-right": "0.3em" },
-                    src: "https://www.biplex.or.kr/user/images/favicon.ico"
-                  }),
-                  createVNode("span", { class: "font-medium" }, "\uC778\uCC9C\uBE14\uB85D\uCCB4\uC778\uAE30\uC220\uD601\uC2E0\uC9C0\uC6D0\uC13C\uD130 - \uC12C\uD328\uC2A4 \uC0AC\uC5C5 \uC18C\uAC1C \uD398\uC774\uC9C0 \uBC14\uB85C\uAC00\uAE30")
-                ], 8, ["onClick"]),
-                createVNode("span", { class: "text-sm" }, "https://www.biplex.or.kr/user/contents.php?sq=43")
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalOutline, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<li${_scopeId}>\uAC1C\uBC1C\uC790\uAC00 API\uB97C \uC27D\uAC8C \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 API Developer \uC6F9\uACFC, \uD2B8\uB79C\uC7AD\uC158 \uCD94\uC801\uC744 \uC704\uD55C \uBAA8\uB2C8\uD130\uB9C1 \uC6F9\uC744 \uAC1C\uBC1C </li><li${_scopeId}><span class="font-medium"${_scopeId}>\uC0AC\uC6A9 \uB77C\uC774\uBE0C\uB7EC\uB9AC</span><ul class="list-circle pl-5"${_scopeId}><li${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "pinia"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC \uC0C1\uD0DC \uAD00\uB9AC </li><li${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "nuxt context"
-            }, null, _parent2, _scopeId));
-            _push2(` \uBAA8\uB4C8\uC744 \uD65C\uC6A9\uD558\uC5EC SEO \uCE5C\uD654\uC801 \uCF58\uD150\uCE20 \uAD6C\uD604 </li></ul></li>`);
-          } else {
-            return [
-              createVNode("li", null, "\uAC1C\uBC1C\uC790\uAC00 API\uB97C \uC27D\uAC8C \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 API Developer \uC6F9\uACFC, \uD2B8\uB79C\uC7AD\uC158 \uCD94\uC801\uC744 \uC704\uD55C \uBAA8\uB2C8\uD130\uB9C1 \uC6F9\uC744 \uAC1C\uBC1C "),
-              createVNode("li", null, [
-                createVNode("span", { class: "font-medium" }, "\uC0AC\uC6A9 \uB77C\uC774\uBE0C\uB7EC\uB9AC"),
-                createVNode("ul", { class: "list-circle pl-5" }, [
-                  createVNode("li", null, [
-                    createVNode(_component_Tag, {
-                      "is-skill": true,
-                      text: "pinia"
-                    }),
-                    createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC \uC0C1\uD0DC \uAD00\uB9AC ")
-                  ]),
-                  createVNode("li", null, [
-                    createVNode(_component_Tag, {
-                      "is-skill": true,
-                      text: "nuxt context"
-                    }),
-                    createTextVNode(" \uBAA8\uB4C8\uC744 \uD65C\uC6A9\uD558\uC5EC SEO \uCE5C\uD654\uC801 \uCF58\uD150\uCE20 \uAD6C\uD604 ")
-                  ])
-                ])
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalFunction, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<li${_scopeId}><p class="mb-1 font-medium"${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "pinia"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC API Playground \uD398\uC774\uC9C0 \uAD6C\uD604 </p> \uC0AC\uC6A9\uC790 \uC120\uD0DD \uC815\uBCF4\uB97C \uC804\uC5ED\uC801\uC73C\uB85C \uAD00\uB9AC\uD558\uACE0 \uC0C8\uB85C\uACE0\uCE68\uC774\uB098 \uD398\uC774\uC9C0 \uB77C\uC6B0\uD305\uC5D0\uB3C4 \uC0C1\uD0DC\uB97C \uC720\uC9C0\uD558\uAE30 \uC704\uD574 Pinia\uB97C \uB3C4\uC785 <br${_scopeId}> \uC774\uB97C \uD1B5\uD574 \uC0AC\uC6A9\uC790\uAC00 \uC120\uD0DD\uD55C \uAC1C\uBC1C \uC5B8\uC5B4\uC640 \uB77C\uC774\uBE0C\uB7EC\uB9AC\uC5D0 \uB9DE\uCDB0 API \uC0AC\uC6A9 \uC608\uC2DC \uCF54\uB4DC\uB97C \uC548\uC815\uC801\uC73C\uB85C \uBCF4\uC5EC\uC904 \uC218 \uC788\uB3C4\uB85D \uAD6C\uD604 </li><li class="font-medium"${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "highlight.js"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC API Playground\uC758 API \uC0AC\uC6A9 \uC608\uC2DC \uCF54\uB4DC \uCEF4\uD3EC\uB10C\uD2B8\uC5D0 \uAD6C\uBB38 \uAC15\uC870\uB97C \uC801\uC6A9 </li><li${_scopeId}><p class="mb-1 font-medium"${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "nuxt content"
-            }, null, _parent2, _scopeId));
-            _push2(` \uBAA8\uB4C8\uC744 \uD65C\uC6A9\uD558\uC5EC Markdown \uAE30\uBC18\uC758 API \uBB38\uC11C\uB97C \uD3EC\uC2A4\uD305 \uC131\uD5A5\uC758 \uC6F9\uD398\uC774\uC9C0\uB85C \uC27D\uAC8C \uAD6C\uD604 </p> \uC815\uC801 \uD30C\uC77C(Markdown)\uC744 \uBC14\uB85C Vue \uCEF4\uD3EC\uB10C\uD2B8\uCC98\uB7FC \uC0AC\uC6A9\uD560 \uC218 \uC788\uC5B4 API \uBB38\uC11C\uD654 \uC791\uC5C5\uC774 \uAC04\uB2E8\uD558\uACE0 \uD6A8\uC728\uC801\uC774\uC5C8\uC74C<br${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "ContentQuery"
-            }, null, _parent2, _scopeId));
-            _push2(`\uB97C \uD65C\uC6A9\uD558\uC5EC API \uAC80\uC0C9 \uAE30\uB2A5\uC744 \uAD6C\uD604 </li>`);
-          } else {
-            return [
-              createVNode("li", null, [
-                createVNode("p", { class: "mb-1 font-medium" }, [
-                  createVNode(_component_Tag, {
-                    "is-skill": true,
-                    text: "pinia"
-                  }),
-                  createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC API Playground \uD398\uC774\uC9C0 \uAD6C\uD604 ")
-                ]),
-                createTextVNode(" \uC0AC\uC6A9\uC790 \uC120\uD0DD \uC815\uBCF4\uB97C \uC804\uC5ED\uC801\uC73C\uB85C \uAD00\uB9AC\uD558\uACE0 \uC0C8\uB85C\uACE0\uCE68\uC774\uB098 \uD398\uC774\uC9C0 \uB77C\uC6B0\uD305\uC5D0\uB3C4 \uC0C1\uD0DC\uB97C \uC720\uC9C0\uD558\uAE30 \uC704\uD574 Pinia\uB97C \uB3C4\uC785 "),
-                createVNode("br"),
-                createTextVNode(" \uC774\uB97C \uD1B5\uD574 \uC0AC\uC6A9\uC790\uAC00 \uC120\uD0DD\uD55C \uAC1C\uBC1C \uC5B8\uC5B4\uC640 \uB77C\uC774\uBE0C\uB7EC\uB9AC\uC5D0 \uB9DE\uCDB0 API \uC0AC\uC6A9 \uC608\uC2DC \uCF54\uB4DC\uB97C \uC548\uC815\uC801\uC73C\uB85C \uBCF4\uC5EC\uC904 \uC218 \uC788\uB3C4\uB85D \uAD6C\uD604 ")
-              ]),
-              createVNode("li", { class: "font-medium" }, [
-                createVNode(_component_Tag, {
-                  "is-skill": true,
-                  text: "highlight.js"
-                }),
-                createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC API Playground\uC758 API \uC0AC\uC6A9 \uC608\uC2DC \uCF54\uB4DC \uCEF4\uD3EC\uB10C\uD2B8\uC5D0 \uAD6C\uBB38 \uAC15\uC870\uB97C \uC801\uC6A9 ")
-              ]),
-              createVNode("li", null, [
-                createVNode("p", { class: "mb-1 font-medium" }, [
-                  createVNode(_component_Tag, {
-                    "is-skill": true,
-                    text: "nuxt content"
-                  }),
-                  createTextVNode(" \uBAA8\uB4C8\uC744 \uD65C\uC6A9\uD558\uC5EC Markdown \uAE30\uBC18\uC758 API \uBB38\uC11C\uB97C \uD3EC\uC2A4\uD305 \uC131\uD5A5\uC758 \uC6F9\uD398\uC774\uC9C0\uB85C \uC27D\uAC8C \uAD6C\uD604 ")
-                ]),
-                createTextVNode(" \uC815\uC801 \uD30C\uC77C(Markdown)\uC744 \uBC14\uB85C Vue \uCEF4\uD3EC\uB10C\uD2B8\uCC98\uB7FC \uC0AC\uC6A9\uD560 \uC218 \uC788\uC5B4 API \uBB38\uC11C\uD654 \uC791\uC5C5\uC774 \uAC04\uB2E8\uD558\uACE0 \uD6A8\uC728\uC801\uC774\uC5C8\uC74C"),
-                createVNode("br"),
-                createVNode(_component_Tag, {
-                  "is-skill": true,
-                  text: "ContentQuery"
-                }),
-                createTextVNode("\uB97C \uD65C\uC6A9\uD558\uC5EC API \uAC80\uC0C9 \uAE30\uB2A5\uC744 \uAD6C\uD604 ")
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalGallery, null, null, _parent));
-      _push(`</div>`);
-    };
-  }
-});
-const _sfc_setup$7 = _sfc_main$7.setup;
-_sfc_main$7.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Incheon.vue");
-  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : undefined;
-};
-const _sfc_main$6 = /* @__PURE__ */ defineComponent({
-  __name: "Image",
-  __ssrInlineRender: true,
-  props: {
-    title: {
-      type: String,
-      default: ""
-    },
-    src: {
-      type: String,
-      default: ""
-    }
-  },
-  setup(__props) {
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_Card = __nuxt_component_0;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "w-full flex flex-col gap-2 items-center cursor-pointer" }, _attrs))}>`);
-      _push(ssrRenderComponent(_component_Card, { class: "overflow-hidden" }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<img${ssrRenderAttr("src", __props.src)}${ssrRenderAttr("alt", __props.title)} class="h-full object-cover"${_scopeId}>`);
-          } else {
-            return [
-              createVNode("img", {
-                src: __props.src,
-                alt: __props.title,
-                class: "h-full object-cover"
-              }, null, 8, ["src", "alt"])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`<span class="text-sm text-gray-600">${ssrInterpolate(__props.title)}</span></div>`);
-    };
-  }
-});
-const _sfc_setup$6 = _sfc_main$6.setup;
-_sfc_main$6.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Modal/Gallery/Image.vue");
-  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : undefined;
-};
-const _sfc_main$5 = /* @__PURE__ */ defineComponent({
-  __name: "Detail",
-  __ssrInlineRender: true,
-  props: {
-    isOpen: {
-      type: Boolean,
-      default: false
-    },
-    closeBtnDisplay: {
-      type: Boolean,
-      default: true
-    }
-  },
-  setup(__props) {
-    return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(Se), mergeProps({
-        appear: "",
-        show: __props.isOpen,
-        as: "template"
-      }, _attrs), {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(unref(Ye), {
-              as: "div",
-              class: "relative z-80",
-              onClose: ($event) => _ctx.$emit(`closeGallery`)
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(ssrRenderComponent(unref(he), {
-                    as: "template",
-                    enter: "duration-300 ease-out",
-                    "enter-from": "opacity-0",
-                    "enter-to": "opacity-100",
-                    leave: "duration-200 ease-in",
-                    "leave-from": "opacity-100",
-                    "leave-to": "opacity-0"
-                  }, {
-                    default: withCtx((_3, _push4, _parent4, _scopeId3) => {
-                      if (_push4) {
-                        _push4(`<div class="fixed inset-0 bg-black bg-opacity-40"${_scopeId3}></div>`);
-                      } else {
-                        return [
-                          createVNode("div", { class: "fixed inset-0 bg-black bg-opacity-40" })
-                        ];
-                      }
-                    }),
-                    _: 1
-                  }, _parent3, _scopeId2));
-                  _push3(`<div class="fixed inset-0 overflow-y-auto"${_scopeId2}><div class="flex min-h-full items-center justify-center p-4 align-middle"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(he), {
-                    as: "template",
-                    enter: "duration-300 ease-out",
-                    "enter-from": "opacity-0 scale-95",
-                    "enter-to": "opacity-100 scale-100",
-                    leave: "duration-200 ease-in",
-                    "leave-from": "opacity-100 scale-100",
-                    "leave-to": "opacity-0 scale-95"
-                  }, {
-                    default: withCtx((_3, _push4, _parent4, _scopeId3) => {
-                      if (_push4) {
-                        _push4(ssrRenderComponent(unref(Ge), { class: "relative w-full max-w-3xl max-h-screen rounded-xl bg-white align-middle shadow-xl transition-all flex flex-col overflow-y-auto" }, {
-                          default: withCtx((_4, _push5, _parent5, _scopeId4) => {
-                            if (_push5) {
-                              _push5(`<div class="absolute top-2 right-2"${_scopeId4}><div class="text-gray-600 cursor-pointer"${_scopeId4}><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"${_scopeId4}><path fill="currentColor" d="M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m8 22.1a1.4 1.4 0 0 1-2 2l-6-6l-6 6.02a1.4 1.4 0 1 1-2-2l6-6.04l-6.17-6.22a1.4 1.4 0 1 1 2-2L18 16.1l6.17-6.17a1.4 1.4 0 1 1 2 2L20 18.08Z" class="clr-i-solid clr-i-solid-path-1"${_scopeId4}></path><path fill="none" d="M0 0h36v36H0z"${_scopeId4}></path></svg></div></div><div class="flex-1 overflow-y-auto"${_scopeId4}>`);
-                              ssrRenderSlot(_ctx.$slots, "default", {}, null, _push5, _parent5, _scopeId4);
-                              _push5(`</div>`);
-                            } else {
-                              return [
-                                createVNode("div", { class: "absolute top-2 right-2" }, [
-                                  createVNode("div", {
-                                    class: "text-gray-600 cursor-pointer",
-                                    onClick: ($event) => _ctx.$emit("closeGallery")
-                                  }, [
-                                    (openBlock(), createBlock("svg", {
-                                      xmlns: "http://www.w3.org/2000/svg",
-                                      width: "36",
-                                      height: "36",
-                                      viewBox: "0 0 36 36"
-                                    }, [
-                                      createVNode("path", {
-                                        fill: "currentColor",
-                                        d: "M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m8 22.1a1.4 1.4 0 0 1-2 2l-6-6l-6 6.02a1.4 1.4 0 1 1-2-2l6-6.04l-6.17-6.22a1.4 1.4 0 1 1 2-2L18 16.1l6.17-6.17a1.4 1.4 0 1 1 2 2L20 18.08Z",
-                                        class: "clr-i-solid clr-i-solid-path-1"
-                                      }),
-                                      createVNode("path", {
-                                        fill: "none",
-                                        d: "M0 0h36v36H0z"
-                                      })
-                                    ]))
-                                  ], 8, ["onClick"])
-                                ]),
-                                createVNode("div", { class: "flex-1 overflow-y-auto" }, [
-                                  renderSlot(_ctx.$slots, "default")
-                                ])
-                              ];
-                            }
-                          }),
-                          _: 3
-                        }, _parent4, _scopeId3));
-                      } else {
-                        return [
-                          createVNode(unref(Ge), { class: "relative w-full max-w-3xl max-h-screen rounded-xl bg-white align-middle shadow-xl transition-all flex flex-col overflow-y-auto" }, {
-                            default: withCtx(() => [
-                              createVNode("div", { class: "absolute top-2 right-2" }, [
-                                createVNode("div", {
-                                  class: "text-gray-600 cursor-pointer",
-                                  onClick: ($event) => _ctx.$emit("closeGallery")
-                                }, [
-                                  (openBlock(), createBlock("svg", {
-                                    xmlns: "http://www.w3.org/2000/svg",
-                                    width: "36",
-                                    height: "36",
-                                    viewBox: "0 0 36 36"
-                                  }, [
-                                    createVNode("path", {
-                                      fill: "currentColor",
-                                      d: "M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m8 22.1a1.4 1.4 0 0 1-2 2l-6-6l-6 6.02a1.4 1.4 0 1 1-2-2l6-6.04l-6.17-6.22a1.4 1.4 0 1 1 2-2L18 16.1l6.17-6.17a1.4 1.4 0 1 1 2 2L20 18.08Z",
-                                      class: "clr-i-solid clr-i-solid-path-1"
-                                    }),
-                                    createVNode("path", {
-                                      fill: "none",
-                                      d: "M0 0h36v36H0z"
-                                    })
-                                  ]))
-                                ], 8, ["onClick"])
-                              ]),
-                              createVNode("div", { class: "flex-1 overflow-y-auto" }, [
-                                renderSlot(_ctx.$slots, "default")
-                              ])
-                            ]),
-                            _: 3
-                          })
-                        ];
-                      }
-                    }),
-                    _: 3
-                  }, _parent3, _scopeId2));
-                  _push3(`</div></div>`);
-                } else {
-                  return [
-                    createVNode(unref(he), {
-                      as: "template",
-                      enter: "duration-300 ease-out",
-                      "enter-from": "opacity-0",
-                      "enter-to": "opacity-100",
-                      leave: "duration-200 ease-in",
-                      "leave-from": "opacity-100",
-                      "leave-to": "opacity-0"
-                    }, {
-                      default: withCtx(() => [
-                        createVNode("div", { class: "fixed inset-0 bg-black bg-opacity-40" })
-                      ]),
-                      _: 1
-                    }),
-                    createVNode("div", { class: "fixed inset-0 overflow-y-auto" }, [
-                      createVNode("div", { class: "flex min-h-full items-center justify-center p-4 align-middle" }, [
-                        createVNode(unref(he), {
-                          as: "template",
-                          enter: "duration-300 ease-out",
-                          "enter-from": "opacity-0 scale-95",
-                          "enter-to": "opacity-100 scale-100",
-                          leave: "duration-200 ease-in",
-                          "leave-from": "opacity-100 scale-100",
-                          "leave-to": "opacity-0 scale-95"
-                        }, {
-                          default: withCtx(() => [
-                            createVNode(unref(Ge), { class: "relative w-full max-w-3xl max-h-screen rounded-xl bg-white align-middle shadow-xl transition-all flex flex-col overflow-y-auto" }, {
-                              default: withCtx(() => [
-                                createVNode("div", { class: "absolute top-2 right-2" }, [
-                                  createVNode("div", {
-                                    class: "text-gray-600 cursor-pointer",
-                                    onClick: ($event) => _ctx.$emit("closeGallery")
-                                  }, [
-                                    (openBlock(), createBlock("svg", {
-                                      xmlns: "http://www.w3.org/2000/svg",
-                                      width: "36",
-                                      height: "36",
-                                      viewBox: "0 0 36 36"
-                                    }, [
-                                      createVNode("path", {
-                                        fill: "currentColor",
-                                        d: "M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m8 22.1a1.4 1.4 0 0 1-2 2l-6-6l-6 6.02a1.4 1.4 0 1 1-2-2l6-6.04l-6.17-6.22a1.4 1.4 0 1 1 2-2L18 16.1l6.17-6.17a1.4 1.4 0 1 1 2 2L20 18.08Z",
-                                        class: "clr-i-solid clr-i-solid-path-1"
-                                      }),
-                                      createVNode("path", {
-                                        fill: "none",
-                                        d: "M0 0h36v36H0z"
-                                      })
-                                    ]))
-                                  ], 8, ["onClick"])
-                                ]),
-                                createVNode("div", { class: "flex-1 overflow-y-auto" }, [
-                                  renderSlot(_ctx.$slots, "default")
-                                ])
-                              ]),
-                              _: 3
-                            })
-                          ]),
-                          _: 3
-                        })
-                      ])
-                    ])
-                  ];
-                }
-              }),
-              _: 3
-            }, _parent2, _scopeId));
-          } else {
-            return [
-              createVNode(unref(Ye), {
-                as: "div",
-                class: "relative z-80",
-                onClose: ($event) => _ctx.$emit(`closeGallery`)
-              }, {
-                default: withCtx(() => [
-                  createVNode(unref(he), {
-                    as: "template",
-                    enter: "duration-300 ease-out",
-                    "enter-from": "opacity-0",
-                    "enter-to": "opacity-100",
-                    leave: "duration-200 ease-in",
-                    "leave-from": "opacity-100",
-                    "leave-to": "opacity-0"
-                  }, {
-                    default: withCtx(() => [
-                      createVNode("div", { class: "fixed inset-0 bg-black bg-opacity-40" })
-                    ]),
-                    _: 1
-                  }),
-                  createVNode("div", { class: "fixed inset-0 overflow-y-auto" }, [
-                    createVNode("div", { class: "flex min-h-full items-center justify-center p-4 align-middle" }, [
-                      createVNode(unref(he), {
-                        as: "template",
-                        enter: "duration-300 ease-out",
-                        "enter-from": "opacity-0 scale-95",
-                        "enter-to": "opacity-100 scale-100",
-                        leave: "duration-200 ease-in",
-                        "leave-from": "opacity-100 scale-100",
-                        "leave-to": "opacity-0 scale-95"
-                      }, {
-                        default: withCtx(() => [
-                          createVNode(unref(Ge), { class: "relative w-full max-w-3xl max-h-screen rounded-xl bg-white align-middle shadow-xl transition-all flex flex-col overflow-y-auto" }, {
-                            default: withCtx(() => [
-                              createVNode("div", { class: "absolute top-2 right-2" }, [
-                                createVNode("div", {
-                                  class: "text-gray-600 cursor-pointer",
-                                  onClick: ($event) => _ctx.$emit("closeGallery")
-                                }, [
-                                  (openBlock(), createBlock("svg", {
-                                    xmlns: "http://www.w3.org/2000/svg",
-                                    width: "36",
-                                    height: "36",
-                                    viewBox: "0 0 36 36"
-                                  }, [
-                                    createVNode("path", {
-                                      fill: "currentColor",
-                                      d: "M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m8 22.1a1.4 1.4 0 0 1-2 2l-6-6l-6 6.02a1.4 1.4 0 1 1-2-2l6-6.04l-6.17-6.22a1.4 1.4 0 1 1 2-2L18 16.1l6.17-6.17a1.4 1.4 0 1 1 2 2L20 18.08Z",
-                                      class: "clr-i-solid clr-i-solid-path-1"
-                                    }),
-                                    createVNode("path", {
-                                      fill: "none",
-                                      d: "M0 0h36v36H0z"
-                                    })
-                                  ]))
-                                ], 8, ["onClick"])
-                              ]),
-                              createVNode("div", { class: "flex-1 overflow-y-auto" }, [
-                                renderSlot(_ctx.$slots, "default")
-                              ])
-                            ]),
-                            _: 3
-                          })
-                        ]),
-                        _: 3
-                      })
-                    ])
-                  ])
-                ]),
-                _: 3
-              }, 8, ["onClose"])
-            ];
-          }
-        }),
-        _: 3
-      }, _parent));
-    };
-  }
-});
-const _sfc_setup$5 = _sfc_main$5.setup;
-_sfc_main$5.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Modal/Gallery/Detail.vue");
-  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : undefined;
-};
-const _sfc_main$4 = /* @__PURE__ */ defineComponent({
-  __name: "Fdid",
-  __ssrInlineRender: true,
-  setup(__props) {
-    const selectedItemSrc = ref("");
-    const isModalOpen = computed(() => !!selectedItemSrc.value);
-    function closeModal() {
-      selectedItemSrc.value = "";
-    }
-    const imageList = [
-      {
-        title: "\uD68C\uC6D0\uAC00\uC785 \uD654\uBA74",
-        src: "/portfolio/fdid2.png"
-      },
-      {
-        title: "VC \uBC1C\uAE09 \uD654\uBA74",
-        src: "/portfolio/fdid3.png"
-      },
-      {
-        title: "VP \uC0DD\uC131 \uD654\uBA74",
-        src: "/portfolio/fdid4.png"
-      },
-      {
-        title: "admin \uD654\uBA74",
-        src: "/portfolio/fdid1.png"
-      }
-    ];
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_ProjectModalSummary = _sfc_main$b;
-      const _component_ProjectModalOutline = __nuxt_component_3;
-      const _component_Tag = _sfc_main$j;
-      const _component_ProjectModalFunction = __nuxt_component_4;
-      const _component_ProjectModalGallery = __nuxt_component_6;
-      const _component_ProjectModalGalleryImage = _sfc_main$6;
-      const _component_ProjectModalGalleryDetail = _sfc_main$5;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col" }, _attrs))}>`);
-      _push(ssrRenderComponent(_component_ProjectModalSummary, { tags: ["nuxt.js", "pwa", "swift UI", "golang", "docker"] }, {
-        period: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` 2024.02 ~ 2024.09 `);
-          } else {
-            return [
-              createTextVNode(" 2024.02 ~ 2024.09 ")
-            ];
-          }
-        }),
-        team: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 2\uBA85 `);
-          } else {
-            return [
-              createTextVNode(" \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 2\uBA85 ")
-            ];
-          }
-        }),
-        part: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<p${_scopeId}> UI/UX \uB514\uC790\uC778 \uBC0F \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C <span class="text-gray-500 lg:text-base text-sm"${_scopeId}>(100%)</span><br${_scopeId}> \uC6F9\uC571(ios) \uAC1C\uBC1C <span class="text-gray-500 text-base"${_scopeId}>(100%)</span><br${_scopeId}> DID library \uAC1C\uBC1C \uBC31\uC5C5 \uC5C5\uBB34 </p>`);
-          } else {
-            return [
-              createVNode("p", null, [
-                createTextVNode(" UI/UX \uB514\uC790\uC778 \uBC0F \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C "),
-                createVNode("span", { class: "text-gray-500 lg:text-base text-sm" }, "(100%)"),
-                createVNode("br"),
-                createTextVNode(" \uC6F9\uC571(ios) \uAC1C\uBC1C "),
-                createVNode("span", { class: "text-gray-500 text-base" }, "(100%)"),
-                createVNode("br"),
-                createTextVNode(" DID library \uAC1C\uBC1C \uBC31\uC5C5 \uC5C5\uBB34 ")
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalOutline, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<li${_scopeId}>PWA \uAE30\uBC18\uC758 \uC6F9\uC0AC\uC774\uD2B8\uB85C \uC2DC\uC791\uD558\uC5EC, \uC774\uD6C4 \uC0AC\uC6A9\uC790 \uC694\uAD6C\uC5D0 \uB530\uB77C iOS \uC6F9\uC571 \uBC84\uC804\uC73C\uB85C \uD655\uC7A5 \uAC1C\uBC1C</li><li${_scopeId}>DID<span class="text-gray-500 lg:text-base text-sm"${_scopeId}>(Decentralized Identity, \uBD84\uC0B0\uC2E0\uC6D0\uD655\uC778)</span> \uBC0F VC<span class="text-gray-500 lg:text-base text-sm"${_scopeId}>(\uAC80\uC99D \uAC00\uB2A5\uD55C \uC790\uACA9 \uC99D\uBA85)</span>\uB97C \uBC1C\uAE09, \uC800\uC7A5, \uC870\uD68C\uD560 \uC218 \uC788\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5 <ul class="list-circle pl-5"${_scopeId}><li${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "cypto.js"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD55C \uB370\uC774\uD130 \uC554\uD638\uD654 \uC9C0\uC6D0 </li><li${_scopeId}>Index DB\uB97C \uC0AC\uC6A9\uD558\uC5EC \uBCF5\uC7A1\uD55C \uAD6C\uC870\uC758 DID, VC \uB370\uC774\uD130 \uC800\uC7A5</li></ul></li><li${_scopeId}>\uBCF4\uC720\uD558\uACE0 \uC788\uB294 VC\uB85C VP<span class="text-gray-500 lg:text-base text-sm"${_scopeId}>(\uAC80\uC99D \uAC00\uB2A5\uD55C \uD504\uB808\uC820\uD14C\uC774\uC158)</span>\uC744 \uC0DD\uC131\uD558\uC5EC \uC778\uC99D\uAE30\uAD00\uC5D0 \uAC80\uC99D \uC694\uCCAD\uD558\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5 <ul class="list-circle pl-5"${_scopeId}><li${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "vue-qrcode"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC VP \uB370\uC774\uD130\uB97C QR code\uB85C \uC0DD\uC131 \uBC0F \uB9AC\uB529\uD558\uB294 \uAE30\uB2A5 \uAD6C\uD604 </li></ul></li>`);
-          } else {
-            return [
-              createVNode("li", null, "PWA \uAE30\uBC18\uC758 \uC6F9\uC0AC\uC774\uD2B8\uB85C \uC2DC\uC791\uD558\uC5EC, \uC774\uD6C4 \uC0AC\uC6A9\uC790 \uC694\uAD6C\uC5D0 \uB530\uB77C iOS \uC6F9\uC571 \uBC84\uC804\uC73C\uB85C \uD655\uC7A5 \uAC1C\uBC1C"),
-              createVNode("li", null, [
-                createTextVNode("DID"),
-                createVNode("span", { class: "text-gray-500 lg:text-base text-sm" }, "(Decentralized Identity, \uBD84\uC0B0\uC2E0\uC6D0\uD655\uC778)"),
-                createTextVNode(" \uBC0F VC"),
-                createVNode("span", { class: "text-gray-500 lg:text-base text-sm" }, "(\uAC80\uC99D \uAC00\uB2A5\uD55C \uC790\uACA9 \uC99D\uBA85)"),
-                createTextVNode("\uB97C \uBC1C\uAE09, \uC800\uC7A5, \uC870\uD68C\uD560 \uC218 \uC788\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5 "),
-                createVNode("ul", { class: "list-circle pl-5" }, [
-                  createVNode("li", null, [
-                    createVNode(_component_Tag, {
-                      "is-skill": true,
-                      text: "cypto.js"
-                    }),
-                    createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD55C \uB370\uC774\uD130 \uC554\uD638\uD654 \uC9C0\uC6D0 ")
-                  ]),
-                  createVNode("li", null, "Index DB\uB97C \uC0AC\uC6A9\uD558\uC5EC \uBCF5\uC7A1\uD55C \uAD6C\uC870\uC758 DID, VC \uB370\uC774\uD130 \uC800\uC7A5")
-                ])
-              ]),
-              createVNode("li", null, [
-                createTextVNode("\uBCF4\uC720\uD558\uACE0 \uC788\uB294 VC\uB85C VP"),
-                createVNode("span", { class: "text-gray-500 lg:text-base text-sm" }, "(\uAC80\uC99D \uAC00\uB2A5\uD55C \uD504\uB808\uC820\uD14C\uC774\uC158)"),
-                createTextVNode("\uC744 \uC0DD\uC131\uD558\uC5EC \uC778\uC99D\uAE30\uAD00\uC5D0 \uAC80\uC99D \uC694\uCCAD\uD558\uB294 \uAE30\uB2A5\uC744 \uC81C\uACF5 "),
-                createVNode("ul", { class: "list-circle pl-5" }, [
-                  createVNode("li", null, [
-                    createVNode(_component_Tag, {
-                      "is-skill": true,
-                      text: "vue-qrcode"
-                    }),
-                    createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC VP \uB370\uC774\uD130\uB97C QR code\uB85C \uC0DD\uC131 \uBC0F \uB9AC\uB529\uD558\uB294 \uAE30\uB2A5 \uAD6C\uD604 ")
-                  ])
-                ])
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalFunction, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<li${_scopeId}>index DB, `);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "dexie.js"
-            }, null, _parent2, _scopeId));
-            _push2(`\uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC DID\uC640 VC\uC640 \uAC19\uC774 \uBCF5\uC7A1\uD55C JSON \uD615\uD0DC\uC758 \uB370\uC774\uD130\uB97C \uC800\uC7A5 \uBC0F \uD578\uB4E4\uB9C1\uC774 \uAC00\uB2A5\uD558\uB3C4\uB85D \uAD6C\uD604 <ul class="my-2"${_scopeId}><div class="bg-zinc-200 px-3 py-2 rounded-lg"${_scopeId}><p class="mb-4 font-semibold"${_scopeId}>\u{1F4A1} \uB85C\uCEEC\uC2A4\uD1A0\uB9AC\uC9C0\uB098 \uC138\uC158\uC2A4\uD1A0\uB9AC\uC9C0\uAC00 \uC544\uB2CC index DB\uB97C \uC0AC\uC6A9\uD55C \uC774\uC720</p><p class="break-words"${_scopeId}>DID\uC640 VC\uC640 \uAC19\uC774 \uBCF5\uC7A1\uD55C JSON \uD615\uD0DC\uC758 \uB370\uC774\uD130\uB97C \uC800\uC7A5\uD558\uACE0 \uAD00\uB9AC\uD558\uAE30 \uC704\uD574 IndexDB\uB97C \uC120\uD0DD\uD588\uC2B5\uB2C8\uB2E4.<br${_scopeId}> Index DB\uB294 \uB85C\uCEEC\uC2A4\uD1A0\uB9AC\uC9C0\uB098 \uC138\uC158\uC2A4\uD1A0\uB9AC\uC9C0\uBCF4\uB2E4 \uAD6C\uC870\uD654\uB41C \uB370\uC774\uD130 \uAD00\uB9AC\uC640 \uB300\uB7C9 \uB370\uC774\uD130 \uCC98\uB9AC\uC5D0 \uC720\uB9AC\uD569\uB2C8\uB2E4.</p><p class="mt-2 text-blue-500 cursor-pointer"${_scopeId}> \uAD00\uB828 \uBE14\uB85C\uADF8 \uD3EC\uC2A4\uD305 \uBCF4\uAE30</p></div></ul></li><li${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "cypto.js"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC \uC0AC\uC6A9\uC790\uAC00 \uC785\uB825\uD55C \uD540\uBC88\uD638\uB85C DID \uBC0F VC \uB370\uC774\uD130\uB97C \uC554\uD638\uD654 <br${_scopeId}>\uBE0C\uB77C\uC6B0\uC800\uC5D0 \uC800\uC7A5\uB41C DID \uBC0F VC\uB97C \uC870\uD68C\uD558\uACE0\uC790 \uD560 \uB54C \uD540\uBC88\uD638 \uC785\uB825 \uC694\uAD6C, \uD540\uBC88\uD638 \uBD88\uC77C\uCE58 \uC2DC \uC870\uD68C \uBD88\uAC00 </li><li${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "vue-qrcode"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC VP JSON \uB370\uC774\uD130\uB97C QR code\uB85C \uC0DD\uC131,<br${_scopeId}>QR reader\uB97C \uD1B5\uD574 \uB4E4\uC5B4\uC628 VP \uB370\uC774\uD130 \uD30C\uC2F1 \uD6C4 \uAC80\uC99D \uAE30\uB2A5 \uAD6C\uD604 </li><li${_scopeId}> Nuxt.js\uC758 PWA \uBAA8\uB4C8\uC744 \uC0AC\uC6A9\uD574 \uB124\uC774\uD2F0\uBE0C \uC571\uACFC \uC720\uC0AC\uD55C \uACBD\uD5D8 \uC81C\uACF5 <br${_scopeId}>\uC624\uD504\uB77C\uC778\uC5D0\uC11C\uB3C4 \uB3D9\uC791 \uAC00\uB2A5\uD55C \uAD6C\uC870\uB85C \uC124\uACC4\uD558\uACE0, \uBE60\uB978 \uB85C\uB529 \uC18D\uB3C4\uC640 \uC131\uB2A5 \uCD5C\uC801\uD654 </li><li${_scopeId}> \uCD94\uD6C4 \uC0AC\uC6A9\uC790 \uC694\uAD6C\uC5D0 \uB530\uB77C SwiftUI\uB97C \uD65C\uC6A9\uD558\uC5EC \uC6F9\uBDF0(WebView)\uB85C iOS \uC571\uC744 \uAC1C\uBC1C <br${_scopeId}>iOS \uB124\uC774\uD2F0\uBE0C \uC571\uACFC \uC720\uC0AC\uD55C \uC0AC\uC6A9\uC790 \uACBD\uD5D8 \uC81C\uACF5 </li><li${_scopeId}> DID library \uAC1C\uBC1C \uBC31\uC5C5\uC778\uB825\uC73C\uB85C, Golang\uC73C\uB85C \uC791\uC131\uB41C gomobile \uB77C\uC774\uBE0C\uB7EC\uB9AC \uC720\uC9C0 \uBCF4\uC218 \uC791\uC5C5 \uD22C\uC785 <br${_scopeId}>\uBC31\uC5D4\uB4DC\uC640 \uD074\uB77C\uC774\uC5B8\uD2B8 \uAC04\uC758 \uC6D0\uD65C\uD55C \uB370\uC774\uD130 \uD1B5\uC2E0\uC744 \uC704\uD55C \uCD5C\uC801\uD654 \uC791\uC5C5 \uC9C4\uD589 </li>`);
-          } else {
-            return [
-              createVNode("li", null, [
-                createTextVNode("index DB, "),
-                createVNode(_component_Tag, {
-                  "is-skill": true,
-                  text: "dexie.js"
-                }),
-                createTextVNode("\uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC DID\uC640 VC\uC640 \uAC19\uC774 \uBCF5\uC7A1\uD55C JSON \uD615\uD0DC\uC758 \uB370\uC774\uD130\uB97C \uC800\uC7A5 \uBC0F \uD578\uB4E4\uB9C1\uC774 \uAC00\uB2A5\uD558\uB3C4\uB85D \uAD6C\uD604 "),
-                createVNode("ul", { class: "my-2" }, [
-                  createVNode("div", { class: "bg-zinc-200 px-3 py-2 rounded-lg" }, [
-                    createVNode("p", { class: "mb-4 font-semibold" }, "\u{1F4A1} \uB85C\uCEEC\uC2A4\uD1A0\uB9AC\uC9C0\uB098 \uC138\uC158\uC2A4\uD1A0\uB9AC\uC9C0\uAC00 \uC544\uB2CC index DB\uB97C \uC0AC\uC6A9\uD55C \uC774\uC720"),
-                    createVNode("p", { class: "break-words" }, [
-                      createTextVNode("DID\uC640 VC\uC640 \uAC19\uC774 \uBCF5\uC7A1\uD55C JSON \uD615\uD0DC\uC758 \uB370\uC774\uD130\uB97C \uC800\uC7A5\uD558\uACE0 \uAD00\uB9AC\uD558\uAE30 \uC704\uD574 IndexDB\uB97C \uC120\uD0DD\uD588\uC2B5\uB2C8\uB2E4."),
-                      createVNode("br"),
-                      createTextVNode(" Index DB\uB294 \uB85C\uCEEC\uC2A4\uD1A0\uB9AC\uC9C0\uB098 \uC138\uC158\uC2A4\uD1A0\uB9AC\uC9C0\uBCF4\uB2E4 \uAD6C\uC870\uD654\uB41C \uB370\uC774\uD130 \uAD00\uB9AC\uC640 \uB300\uB7C9 \uB370\uC774\uD130 \uCC98\uB9AC\uC5D0 \uC720\uB9AC\uD569\uB2C8\uB2E4.")
-                    ]),
-                    createVNode("p", {
-                      class: "mt-2 text-blue-500 cursor-pointer",
-                      onClick: ($event) => unref(moveToWeb)(`https://jinnnkcoding.tistory.com/239`)
-                    }, " \uAD00\uB828 \uBE14\uB85C\uADF8 \uD3EC\uC2A4\uD305 \uBCF4\uAE30", 8, ["onClick"])
-                  ])
-                ])
-              ]),
-              createVNode("li", null, [
-                createVNode(_component_Tag, {
-                  "is-skill": true,
-                  text: "cypto.js"
-                }),
-                createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC \uC0AC\uC6A9\uC790\uAC00 \uC785\uB825\uD55C \uD540\uBC88\uD638\uB85C DID \uBC0F VC \uB370\uC774\uD130\uB97C \uC554\uD638\uD654 "),
-                createVNode("br"),
-                createTextVNode("\uBE0C\uB77C\uC6B0\uC800\uC5D0 \uC800\uC7A5\uB41C DID \uBC0F VC\uB97C \uC870\uD68C\uD558\uACE0\uC790 \uD560 \uB54C \uD540\uBC88\uD638 \uC785\uB825 \uC694\uAD6C, \uD540\uBC88\uD638 \uBD88\uC77C\uCE58 \uC2DC \uC870\uD68C \uBD88\uAC00 ")
-              ]),
-              createVNode("li", null, [
-                createVNode(_component_Tag, {
-                  "is-skill": true,
-                  text: "vue-qrcode"
-                }),
-                createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC0AC\uC6A9\uD558\uC5EC VP JSON \uB370\uC774\uD130\uB97C QR code\uB85C \uC0DD\uC131,"),
-                createVNode("br"),
-                createTextVNode("QR reader\uB97C \uD1B5\uD574 \uB4E4\uC5B4\uC628 VP \uB370\uC774\uD130 \uD30C\uC2F1 \uD6C4 \uAC80\uC99D \uAE30\uB2A5 \uAD6C\uD604 ")
-              ]),
-              createVNode("li", null, [
-                createTextVNode(" Nuxt.js\uC758 PWA \uBAA8\uB4C8\uC744 \uC0AC\uC6A9\uD574 \uB124\uC774\uD2F0\uBE0C \uC571\uACFC \uC720\uC0AC\uD55C \uACBD\uD5D8 \uC81C\uACF5 "),
-                createVNode("br"),
-                createTextVNode("\uC624\uD504\uB77C\uC778\uC5D0\uC11C\uB3C4 \uB3D9\uC791 \uAC00\uB2A5\uD55C \uAD6C\uC870\uB85C \uC124\uACC4\uD558\uACE0, \uBE60\uB978 \uB85C\uB529 \uC18D\uB3C4\uC640 \uC131\uB2A5 \uCD5C\uC801\uD654 ")
-              ]),
-              createVNode("li", null, [
-                createTextVNode(" \uCD94\uD6C4 \uC0AC\uC6A9\uC790 \uC694\uAD6C\uC5D0 \uB530\uB77C SwiftUI\uB97C \uD65C\uC6A9\uD558\uC5EC \uC6F9\uBDF0(WebView)\uB85C iOS \uC571\uC744 \uAC1C\uBC1C "),
-                createVNode("br"),
-                createTextVNode("iOS \uB124\uC774\uD2F0\uBE0C \uC571\uACFC \uC720\uC0AC\uD55C \uC0AC\uC6A9\uC790 \uACBD\uD5D8 \uC81C\uACF5 ")
-              ]),
-              createVNode("li", null, [
-                createTextVNode(" DID library \uAC1C\uBC1C \uBC31\uC5C5\uC778\uB825\uC73C\uB85C, Golang\uC73C\uB85C \uC791\uC131\uB41C gomobile \uB77C\uC774\uBE0C\uB7EC\uB9AC \uC720\uC9C0 \uBCF4\uC218 \uC791\uC5C5 \uD22C\uC785 "),
-                createVNode("br"),
-                createTextVNode("\uBC31\uC5D4\uB4DC\uC640 \uD074\uB77C\uC774\uC5B8\uD2B8 \uAC04\uC758 \uC6D0\uD65C\uD55C \uB370\uC774\uD130 \uD1B5\uC2E0\uC744 \uC704\uD55C \uCD5C\uC801\uD654 \uC791\uC5C5 \uC9C4\uD589 ")
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalGallery, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<!--[-->`);
-            ssrRenderList(imageList, (item, i2) => {
-              _push2(ssrRenderComponent(_component_ProjectModalGalleryImage, {
-                key: i2,
-                title: item.title,
-                src: item.src,
-                onClick: () => {
-                  selectedItemSrc.value = item.src;
-                }
-              }, null, _parent2, _scopeId));
-            });
-            _push2(`<!--]-->`);
-          } else {
-            return [
-              (openBlock(), createBlock(Fragment, null, renderList(imageList, (item, i2) => {
-                return createVNode(_component_ProjectModalGalleryImage, {
-                  key: i2,
-                  title: item.title,
-                  src: item.src,
-                  onClick: () => {
-                    selectedItemSrc.value = item.src;
-                  }
-                }, null, 8, ["title", "src", "onClick"]);
-              }), 64))
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalGalleryDetail, {
-        "is-open": unref(isModalOpen),
-        onCloseGallery: closeModal
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<img${ssrRenderAttr("src", unref(selectedItemSrc))}${_scopeId}>`);
-          } else {
-            return [
-              createVNode("img", { src: unref(selectedItemSrc) }, null, 8, ["src"])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</div>`);
-    };
-  }
-});
-const _sfc_setup$4 = _sfc_main$4.setup;
-_sfc_main$4.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Fdid.vue");
-  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : undefined;
-};
-const _sfc_main$3 = /* @__PURE__ */ defineComponent({
-  __name: "Token",
-  __ssrInlineRender: true,
-  setup(__props) {
-    const selectedItemSrc = ref("");
-    const isModalOpen = computed(() => !!selectedItemSrc.value);
-    function closeModal() {
-      selectedItemSrc.value = "";
-    }
-    const imageList = [
-      {
-        title: "\uBA54\uC778 \uD654\uBA74",
-        src: "/portfolio/token1.png"
-      },
-      {
-        title: "\uC0C1\uD488 \uC0C1\uC138\uD398\uC774\uC9C0 \uBC0F \uAC70\uB798\uD654\uBA74",
-        src: "/portfolio/token2.png"
-      },
-      {
-        title: "\uB9C8\uC774\uD398\uC774\uC9C0",
-        src: "/portfolio/token3.png"
-      },
-      {
-        title: "\uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC-\uD2B8\uB79C\uC7AD\uC158 \uD398\uC774\uC9C0",
-        src: "/portfolio/token4.png"
-      },
-      {
-        title: "\uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC-\uD1A0\uD070 \uC0C1\uC138 \uD398\uC774\uC9C0",
-        src: "/portfolio/token5.png"
-      }
-    ];
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_ProjectModalSummary = _sfc_main$b;
-      const _component_PageSmallSection = __nuxt_component_1$1;
-      const _component_PageTitle = _sfc_main$l;
-      const _component_ProjectModalOutline = __nuxt_component_3;
-      const _component_ProjectModalFunction = __nuxt_component_4;
-      const _component_Tag = _sfc_main$j;
-      const _component_ProjectModalGallery = __nuxt_component_6;
-      const _component_ProjectModalGalleryImage = _sfc_main$6;
-      const _component_ProjectModalGalleryDetail = _sfc_main$5;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col" }, _attrs))}>`);
-      _push(ssrRenderComponent(_component_ProjectModalSummary, { tags: ["nuxt.js", "spring boot"] }, {
-        period: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` 2023.09 ~ 2023.12 `);
-          } else {
-            return [
-              createTextVNode(" 2023.09 ~ 2023.12 ")
-            ];
-          }
-        }),
-        team: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 1\uBA85 `);
-          } else {
-            return [
-              createTextVNode(" \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 1\uBA85 ")
-            ];
-          }
-        }),
-        part: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<p${_scopeId}> UI/UX \uB514\uC790\uC778 \uBC0F \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C <span class="text-gray-500 lg:text-base text-sm"${_scopeId}>(100%)</span><br${_scopeId}></p>`);
-          } else {
-            return [
-              createVNode("p", null, [
-                createTextVNode(" UI/UX \uB514\uC790\uC778 \uBC0F \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C "),
-                createVNode("span", { class: "text-gray-500 lg:text-base text-sm" }, "(100%)"),
-                createVNode("br")
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_PageSmallSection, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_component_PageTitle, {
-              size: "sm",
-              class: "pb-0"
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(`<p${_scopeId2}>\u{1F517} \uAD00\uB828 \uB9C1\uD06C</p>`);
-                } else {
-                  return [
-                    createVNode("p", null, "\u{1F517} \uAD00\uB828 \uB9C1\uD06C")
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(`<p class="flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"${_scopeId}><span class="font-medium"${_scopeId}>\uBE44\uC0C1\uC7A5 \uD1A0\uD070 \uC99D\uAD8C \uD50C\uB7AB\uD3FC \uBC14\uB85C\uAC00\uAE30</span><span class="text-sm"${_scopeId}>https://fsto-dev.fingerservice.co.kr:8087</span></p><p class="flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"${_scopeId}><span class="font-medium"${_scopeId}>\uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC<span class="text-gray-500"${_scopeId}>(\uD2B8\uB79C\uC7AD\uC158 \uCD94\uC801 \uD398\uC774\uC9C0)</span> \uBC14\uB85C\uAC00\uAE30</span><span class="text-sm"${_scopeId}>https://fsto-dev.fingerservice.co.kr:8082</span></p><p class="flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"${_scopeId}><span class="font-medium"${_scopeId}>\uD504\uB85C\uC81D\uD2B8 \uC18C\uAC1C \uD398\uC774\uC9C0 \uBC14\uB85C\uAC00\uAE30</span><span class="text-sm"${_scopeId}>https://www.finger.co.kr/homepage/html/bus/bus-05-05.html?cate=bus&amp;sub=05&amp;page=05</span></p>`);
-          } else {
-            return [
-              createVNode(_component_PageTitle, {
-                size: "sm",
-                class: "pb-0"
-              }, {
-                default: withCtx(() => [
-                  createVNode("p", null, "\u{1F517} \uAD00\uB828 \uB9C1\uD06C")
-                ]),
-                _: 1
-              }),
-              createVNode("p", {
-                onClick: ($event) => unref(moveToWeb)(`https://fsto-dev.fingerservice.co.kr:8087`),
-                class: "flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"
-              }, [
-                createVNode("span", { class: "font-medium" }, "\uBE44\uC0C1\uC7A5 \uD1A0\uD070 \uC99D\uAD8C \uD50C\uB7AB\uD3FC \uBC14\uB85C\uAC00\uAE30"),
-                createVNode("span", { class: "text-sm" }, "https://fsto-dev.fingerservice.co.kr:8087")
-              ], 8, ["onClick"]),
-              createVNode("p", {
-                onClick: ($event) => unref(moveToWeb)(`https://fsto-dev.fingerservice.co.kr:8082`),
-                class: "flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"
-              }, [
-                createVNode("span", { class: "font-medium" }, [
-                  createTextVNode("\uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC"),
-                  createVNode("span", { class: "text-gray-500" }, "(\uD2B8\uB79C\uC7AD\uC158 \uCD94\uC801 \uD398\uC774\uC9C0)"),
-                  createTextVNode(" \uBC14\uB85C\uAC00\uAE30")
-                ]),
-                createVNode("span", { class: "text-sm" }, "https://fsto-dev.fingerservice.co.kr:8082")
-              ], 8, ["onClick"]),
-              createVNode("p", {
-                onClick: ($event) => unref(moveToWeb)(`https://www.finger.co.kr/homepage/html/bus/bus-05-05.html?cate=bus&sub=05&page=05`),
-                class: "flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"
-              }, [
-                createVNode("span", { class: "font-medium" }, "\uD504\uB85C\uC81D\uD2B8 \uC18C\uAC1C \uD398\uC774\uC9C0 \uBC14\uB85C\uAC00\uAE30"),
-                createVNode("span", { class: "text-sm" }, "https://www.finger.co.kr/homepage/html/bus/bus-05-05.html?cate=bus&sub=05&page=05")
-              ], 8, ["onClick"])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalOutline, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<li${_scopeId}>\uC0AC\uC6A9\uC790\uB4E4\uC774 \uBE44\uC0C1\uC7A5 \uD1A0\uD070\uC744 \uAC70\uB798\uD560 \uC218 \uC788\uB294 \uBE44\uC0C1\uC7A5 \uAC70\uB798 \uD50C\uB7AB\uD3FC\uACFC \uBE14\uB85D\uCCB4\uC778 \uBAA8\uB2C8\uD130\uB9C1 \uC6F9 \uAC1C\uBC1C</li><li${_scopeId}><span class="font-medium"${_scopeId}>\uD575\uC2EC \uAE30\uB2A5</span><ul class="list-circle pl-5"${_scopeId}><li${_scopeId}>\uB9E4\uB3C4/\uB9E4\uC218 \uAE30\uB2A5</li><li${_scopeId}>\uAC70\uB798 \uB0B4\uC5ED \uC870\uD68C</li><li${_scopeId}>\uC2E4\uC2DC\uAC04 \uAC00\uACA9 \uC815\uBCF4 \uC81C\uACF5</li><li${_scopeId}>\uC0AC\uC6A9\uC790 \uD1A0\uB860 \uAE30\uB2A5 \uC81C\uACF5</li></ul></li>`);
-          } else {
-            return [
-              createVNode("li", null, "\uC0AC\uC6A9\uC790\uB4E4\uC774 \uBE44\uC0C1\uC7A5 \uD1A0\uD070\uC744 \uAC70\uB798\uD560 \uC218 \uC788\uB294 \uBE44\uC0C1\uC7A5 \uAC70\uB798 \uD50C\uB7AB\uD3FC\uACFC \uBE14\uB85D\uCCB4\uC778 \uBAA8\uB2C8\uD130\uB9C1 \uC6F9 \uAC1C\uBC1C"),
-              createVNode("li", null, [
-                createVNode("span", { class: "font-medium" }, "\uD575\uC2EC \uAE30\uB2A5"),
-                createVNode("ul", { class: "list-circle pl-5" }, [
-                  createVNode("li", null, "\uB9E4\uB3C4/\uB9E4\uC218 \uAE30\uB2A5"),
-                  createVNode("li", null, "\uAC70\uB798 \uB0B4\uC5ED \uC870\uD68C"),
-                  createVNode("li", null, "\uC2E4\uC2DC\uAC04 \uAC00\uACA9 \uC815\uBCF4 \uC81C\uACF5"),
-                  createVNode("li", null, "\uC0AC\uC6A9\uC790 \uD1A0\uB860 \uAE30\uB2A5 \uC81C\uACF5")
-                ])
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalFunction, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<li${_scopeId}> \uBE44\uC0C1\uC7A5 \uAC70\uB798 \uD50C\uB7AB\uD3FC <ul class="my-2"${_scopeId}><div class="bg-zinc-200 px-3 py-2 rounded-lg"${_scopeId}><p class="mb-4 font-semibold"${_scopeId}>\u{1F4A1} \uC8FC\uC694 \uAE30\uB2A5</p><p class="break-words"${_scopeId}> - \uB9E4\uB3C4/\uB9E4\uC218 \uC0C1\uD488 \uB4F1\uB85D \uAE30\uB2A5 \uAD6C\uD604<br${_scopeId}> - \uC0AC\uC6A9\uC790\uC758 \uBCF4\uC720 \uC608\uCE58\uAE08 \uBC0F \uC0C1\uD488 \uC218\uB7C9\uC744 \uD655\uC778\uD558\uC5EC \uC720\uD6A8\uC131 \uAC80\uC99D\uC744 \uC801\uC6A9<br${_scopeId}> - \uC911\uBCF5 \uAC70\uB798 \uBC29\uC9C0\uB97C \uC704\uD574 \uB354\uBE14 \uD074\uB9AD \uBC29\uC9C0 \uB85C\uC9C1 \uCD94\uAC00<br${_scopeId}> - `);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "chart.js"
-            }, null, _parent2, _scopeId));
-            _push2(`\uB97C \uD65C\uC6A9\uD558\uC5EC \uC2E4\uC2DC\uAC04 \uAC00\uACA9 \uCC28\uD2B8 \uC0DD\uC131 \uBC0F \uC2DC\uAC01\uD654. </p></div></ul></li><li${_scopeId}> \uD1A0\uB860 \uD398\uC774\uC9C0 <ul class="my-2"${_scopeId}><div class="bg-zinc-200 px-3 py-2 rounded-lg"${_scopeId}><p class="mb-4 font-semibold"${_scopeId}>\u{1F4A1} \uB313\uAE00 \uBC0F \uC0AC\uC6A9\uC790 \uBA58\uC158 \uAE30\uB2A5</p><p class="break-words"${_scopeId}> - \uC0AC\uC6A9\uC790\uAC00 \uC791\uC131\uD55C \uB313\uAE00\uC744 \uB4F1\uB85D, \uC218\uC815, \uC0AD\uC81C\uD560 \uC218 \uC788\uB294 \uB313\uAE00 \uAE30\uB2A5 \uAD6C\uD604<br${_scopeId}> - \uC0AC\uC6A9\uC790 \uBA58\uC158 \uAE30\uB2A5\uC744 \uD1B5\uD574 \uD2B9\uC815 \uC0AC\uC6A9\uC790\uB97C \uD638\uCD9C\uD560 \uC218 \uC788\uB3C4\uB85D \uAC1C\uBC1C<br${_scopeId}> - \uC2E4\uC2DC\uAC04\uC73C\uB85C \uB313\uAE00\uC774 \uBC18\uC601\uB418\uB294 \uB3D9\uC801 UI \uC81C\uACF5 </p></div></ul></li><li${_scopeId}> \uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC <ul class="my-2"${_scopeId}><div class="bg-zinc-200 px-3 py-2 rounded-lg"${_scopeId}><p class="mb-4 font-semibold"${_scopeId}>\u{1F4A1} \uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC \uC8FC\uC694 \uAE30\uB2A5</p><p class="break-words"${_scopeId}> - \uBE14\uB85D, \uD2B8\uB79C\uC7AD\uC158, \uD1A0\uD070 \uB9AC\uC2A4\uD2B8\uB97C \uC870\uD68C\uD558\uACE0, \uAC01 \uD56D\uBAA9\uC758 \uC0C1\uC138 \uC815\uBCF4\uB97C \uC81C\uACF5\uD558\uB294 UI/UX \uC124\uACC4 \uBC0F \uAC1C\uBC1C<br${_scopeId}></p></div></ul></li>`);
-          } else {
-            return [
-              createVNode("li", null, [
-                createTextVNode(" \uBE44\uC0C1\uC7A5 \uAC70\uB798 \uD50C\uB7AB\uD3FC "),
-                createVNode("ul", { class: "my-2" }, [
-                  createVNode("div", { class: "bg-zinc-200 px-3 py-2 rounded-lg" }, [
-                    createVNode("p", { class: "mb-4 font-semibold" }, "\u{1F4A1} \uC8FC\uC694 \uAE30\uB2A5"),
-                    createVNode("p", { class: "break-words" }, [
-                      createTextVNode(" - \uB9E4\uB3C4/\uB9E4\uC218 \uC0C1\uD488 \uB4F1\uB85D \uAE30\uB2A5 \uAD6C\uD604"),
-                      createVNode("br"),
-                      createTextVNode(" - \uC0AC\uC6A9\uC790\uC758 \uBCF4\uC720 \uC608\uCE58\uAE08 \uBC0F \uC0C1\uD488 \uC218\uB7C9\uC744 \uD655\uC778\uD558\uC5EC \uC720\uD6A8\uC131 \uAC80\uC99D\uC744 \uC801\uC6A9"),
-                      createVNode("br"),
-                      createTextVNode(" - \uC911\uBCF5 \uAC70\uB798 \uBC29\uC9C0\uB97C \uC704\uD574 \uB354\uBE14 \uD074\uB9AD \uBC29\uC9C0 \uB85C\uC9C1 \uCD94\uAC00"),
-                      createVNode("br"),
-                      createTextVNode(" - "),
-                      createVNode(_component_Tag, {
-                        "is-skill": true,
-                        text: "chart.js"
-                      }),
-                      createTextVNode("\uB97C \uD65C\uC6A9\uD558\uC5EC \uC2E4\uC2DC\uAC04 \uAC00\uACA9 \uCC28\uD2B8 \uC0DD\uC131 \uBC0F \uC2DC\uAC01\uD654. ")
-                    ])
-                  ])
-                ])
-              ]),
-              createVNode("li", null, [
-                createTextVNode(" \uD1A0\uB860 \uD398\uC774\uC9C0 "),
-                createVNode("ul", { class: "my-2" }, [
-                  createVNode("div", { class: "bg-zinc-200 px-3 py-2 rounded-lg" }, [
-                    createVNode("p", { class: "mb-4 font-semibold" }, "\u{1F4A1} \uB313\uAE00 \uBC0F \uC0AC\uC6A9\uC790 \uBA58\uC158 \uAE30\uB2A5"),
-                    createVNode("p", { class: "break-words" }, [
-                      createTextVNode(" - \uC0AC\uC6A9\uC790\uAC00 \uC791\uC131\uD55C \uB313\uAE00\uC744 \uB4F1\uB85D, \uC218\uC815, \uC0AD\uC81C\uD560 \uC218 \uC788\uB294 \uB313\uAE00 \uAE30\uB2A5 \uAD6C\uD604"),
-                      createVNode("br"),
-                      createTextVNode(" - \uC0AC\uC6A9\uC790 \uBA58\uC158 \uAE30\uB2A5\uC744 \uD1B5\uD574 \uD2B9\uC815 \uC0AC\uC6A9\uC790\uB97C \uD638\uCD9C\uD560 \uC218 \uC788\uB3C4\uB85D \uAC1C\uBC1C"),
-                      createVNode("br"),
-                      createTextVNode(" - \uC2E4\uC2DC\uAC04\uC73C\uB85C \uB313\uAE00\uC774 \uBC18\uC601\uB418\uB294 \uB3D9\uC801 UI \uC81C\uACF5 ")
-                    ])
-                  ])
-                ])
-              ]),
-              createVNode("li", null, [
-                createTextVNode(" \uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC "),
-                createVNode("ul", { class: "my-2" }, [
-                  createVNode("div", { class: "bg-zinc-200 px-3 py-2 rounded-lg" }, [
-                    createVNode("p", { class: "mb-4 font-semibold" }, "\u{1F4A1} \uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC \uC8FC\uC694 \uAE30\uB2A5"),
-                    createVNode("p", { class: "break-words" }, [
-                      createTextVNode(" - \uBE14\uB85D, \uD2B8\uB79C\uC7AD\uC158, \uD1A0\uD070 \uB9AC\uC2A4\uD2B8\uB97C \uC870\uD68C\uD558\uACE0, \uAC01 \uD56D\uBAA9\uC758 \uC0C1\uC138 \uC815\uBCF4\uB97C \uC81C\uACF5\uD558\uB294 UI/UX \uC124\uACC4 \uBC0F \uAC1C\uBC1C"),
-                      createVNode("br")
-                    ])
-                  ])
-                ])
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalGallery, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<!--[-->`);
-            ssrRenderList(imageList, (item, i2) => {
-              _push2(ssrRenderComponent(_component_ProjectModalGalleryImage, {
-                key: i2,
-                title: item.title,
-                src: item.src,
-                onClick: () => {
-                  selectedItemSrc.value = item.src;
-                }
-              }, null, _parent2, _scopeId));
-            });
-            _push2(`<!--]-->`);
-          } else {
-            return [
-              (openBlock(), createBlock(Fragment, null, renderList(imageList, (item, i2) => {
-                return createVNode(_component_ProjectModalGalleryImage, {
-                  key: i2,
-                  title: item.title,
-                  src: item.src,
-                  onClick: () => {
-                    selectedItemSrc.value = item.src;
-                  }
-                }, null, 8, ["title", "src", "onClick"]);
-              }), 64))
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalGalleryDetail, {
-        "is-open": unref(isModalOpen),
-        onCloseGallery: closeModal
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<img${ssrRenderAttr("src", unref(selectedItemSrc))}${_scopeId}>`);
-          } else {
-            return [
-              createVNode("img", { src: unref(selectedItemSrc) }, null, 8, ["src"])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</div>`);
-    };
-  }
-});
-const _sfc_setup$3 = _sfc_main$3.setup;
-_sfc_main$3.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Token.vue");
-  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : undefined;
-};
-const _sfc_main$2 = /* @__PURE__ */ defineComponent({
-  __name: "Baas",
-  __ssrInlineRender: true,
-  setup(__props) {
-    const selectedItemSrc = ref("");
-    const isModalOpen = computed(() => !!selectedItemSrc.value);
-    function closeModal() {
-      selectedItemSrc.value = "";
-    }
-    const imageList = [
-      {
-        title: "\uBA54\uC778 \uD654\uBA74",
-        src: "/portfolio/token1.png"
-      },
-      {
-        title: "\uC0C1\uD488 \uC0C1\uC138\uD398\uC774\uC9C0 \uBC0F \uAC70\uB798\uD654\uBA74",
-        src: "/portfolio/token2.png"
-      },
-      {
-        title: "\uB9C8\uC774\uD398\uC774\uC9C0",
-        src: "/portfolio/token3.png"
-      },
-      {
-        title: "\uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC-\uD2B8\uB79C\uC7AD\uC158 \uD398\uC774\uC9C0",
-        src: "/portfolio/token4.png"
-      },
-      {
-        title: "\uBE14\uB85D\uCCB4\uC778 \uB300\uC2DC\uBCF4\uB4DC-\uD1A0\uD070 \uC0C1\uC138 \uD398\uC774\uC9C0",
-        src: "/portfolio/token5.png"
-      }
-    ];
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_ProjectModalSummary = _sfc_main$b;
-      const _component_PageSmallSection = __nuxt_component_1$1;
-      const _component_PageTitle = _sfc_main$l;
-      const _component_ProjectModalOutline = __nuxt_component_3;
-      const _component_ProjectModalFunction = __nuxt_component_4;
-      const _component_Tag = _sfc_main$j;
-      const _component_ProjectModalGallery = __nuxt_component_6;
-      const _component_ProjectModalGalleryImage = _sfc_main$6;
-      const _component_ProjectModalGalleryDetail = _sfc_main$5;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col" }, _attrs))}>`);
-      _push(ssrRenderComponent(_component_ProjectModalSummary, { tags: ["nuxt.js", "spring boot"] }, {
-        period: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` 2023.09 ~ 2023.12 `);
-          } else {
-            return [
-              createTextVNode(" 2023.09 ~ 2023.12 ")
-            ];
-          }
-        }),
-        team: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 1\uBA85 `);
-          } else {
-            return [
-              createTextVNode(" \uD504\uB860\uD2B8 \uAC1C\uBC1C\uC790 1\uBA85(\uBCF8\uC778), \uBC31\uC5D4\uB4DC \uAC1C\uBC1C\uC790 1\uBA85 ")
-            ];
-          }
-        }),
-        part: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<p${_scopeId}> UI/UX \uB514\uC790\uC778 \uBC0F \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C <span class="text-gray-500 lg:text-base text-sm"${_scopeId}>(100%)</span><br${_scopeId}></p>`);
-          } else {
-            return [
-              createVNode("p", null, [
-                createTextVNode(" UI/UX \uB514\uC790\uC778 \uBC0F \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C "),
-                createVNode("span", { class: "text-gray-500 lg:text-base text-sm" }, "(100%)"),
-                createVNode("br")
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_PageSmallSection, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_component_PageTitle, {
-              size: "sm",
-              class: "pb-0"
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(`<p${_scopeId2}>\u{1F517} \uAD00\uB828 \uB9C1\uD06C</p>`);
-                } else {
-                  return [
-                    createVNode("p", null, "\u{1F517} \uAD00\uB828 \uB9C1\uD06C")
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(`<p class="flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"${_scopeId}><span class="font-medium"${_scopeId}>F-wallet \uD648\uD398\uC774\uC9C0 \uBC14\uB85C\uAC00\uAE30</span><span class="text-blue-500 text-base"${_scopeId}>\uD14C\uC2A4\uD2B8 \uC544\uC774\uB514: finger@yopmail.com / \uBE44\uBC00\uBC88\uD638: 1</span><span class="text-sm"${_scopeId}>https://fassetchain-dev.fingerservice.co.kr</span></p>`);
-          } else {
-            return [
-              createVNode(_component_PageTitle, {
-                size: "sm",
-                class: "pb-0"
-              }, {
-                default: withCtx(() => [
-                  createVNode("p", null, "\u{1F517} \uAD00\uB828 \uB9C1\uD06C")
-                ]),
-                _: 1
-              }),
-              createVNode("p", {
-                onClick: ($event) => unref(moveToWeb)(`https://fassetchain-dev.fingerservice.co.kr`),
-                class: "flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg"
-              }, [
-                createVNode("span", { class: "font-medium" }, "F-wallet \uD648\uD398\uC774\uC9C0 \uBC14\uB85C\uAC00\uAE30"),
-                createVNode("span", { class: "text-blue-500 text-base" }, "\uD14C\uC2A4\uD2B8 \uC544\uC774\uB514: finger@yopmail.com / \uBE44\uBC00\uBC88\uD638: 1"),
-                createVNode("span", { class: "text-sm" }, "https://fassetchain-dev.fingerservice.co.kr")
-              ], 8, ["onClick"])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalOutline, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<li${_scopeId}>\uAC01\uC885 \uBE14\uB85D\uCCB4\uC778 API\uB97C \uC27D\uAC8C \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 \uAC00\uC774\uB4DC \uD50C\uB7AB\uD3FC \uC6F9 \uAC1C\uBC1C</li><li${_scopeId}><span class="font-medium"${_scopeId}>\uD575\uC2EC \uAE30\uB2A5</span><ul class="list-circle pl-5"${_scopeId}><li${_scopeId}>API Docs \uD654\uBA74\uC744 \uD1B5\uD574 \uBE14\uB85D\uCCB4\uC778 API\uC5D0 \uB300\uD55C \uBB38\uC11C \uC81C\uACF5</li><li${_scopeId}>\uCF58\uC194 \uD654\uBA74\uC5D0\uC11C API \uC694\uCCAD \uBC0F \uC751\uB2F5 \uC2E4\uC2DC\uAC04 \uD14C\uC2A4\uD2B8 \uAE30\uB2A5</li></ul></li>`);
-          } else {
-            return [
-              createVNode("li", null, "\uAC01\uC885 \uBE14\uB85D\uCCB4\uC778 API\uB97C \uC27D\uAC8C \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 \uAC00\uC774\uB4DC \uD50C\uB7AB\uD3FC \uC6F9 \uAC1C\uBC1C"),
-              createVNode("li", null, [
-                createVNode("span", { class: "font-medium" }, "\uD575\uC2EC \uAE30\uB2A5"),
-                createVNode("ul", { class: "list-circle pl-5" }, [
-                  createVNode("li", null, "API Docs \uD654\uBA74\uC744 \uD1B5\uD574 \uBE14\uB85D\uCCB4\uC778 API\uC5D0 \uB300\uD55C \uBB38\uC11C \uC81C\uACF5"),
-                  createVNode("li", null, "\uCF58\uC194 \uD654\uBA74\uC5D0\uC11C API \uC694\uCCAD \uBC0F \uC751\uB2F5 \uC2E4\uC2DC\uAC04 \uD14C\uC2A4\uD2B8 \uAE30\uB2A5")
-                ])
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalFunction, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<li${_scopeId}><p class="mb-1 font-medium"${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "pinia"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC API Playground \uD398\uC774\uC9C0 \uAD6C\uD604 </p> \uC0AC\uC6A9\uC790 \uC120\uD0DD \uC815\uBCF4\uB97C \uC804\uC5ED\uC801\uC73C\uB85C \uAD00\uB9AC\uD558\uACE0 \uC0C8\uB85C\uACE0\uCE68\uC774\uB098 \uD398\uC774\uC9C0 \uB77C\uC6B0\uD305\uC5D0\uB3C4 \uC0C1\uD0DC\uB97C \uC720\uC9C0\uD558\uAE30 \uC704\uD574 Pinia\uB97C \uB3C4\uC785 <br${_scopeId}> \uC774\uB97C \uD1B5\uD574 \uC0AC\uC6A9\uC790\uAC00 \uC120\uD0DD\uD55C \uAC1C\uBC1C \uC5B8\uC5B4\uC640 \uB77C\uC774\uBE0C\uB7EC\uB9AC\uC5D0 \uB9DE\uCDB0 API \uC0AC\uC6A9 \uC608\uC2DC \uCF54\uB4DC\uB97C \uC548\uC815\uC801\uC73C\uB85C \uBCF4\uC5EC\uC904 \uC218 \uC788\uB3C4\uB85D \uAD6C\uD604 </li><li class="font-medium"${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "highlight.js"
-            }, null, _parent2, _scopeId));
-            _push2(` \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC API Playground\uC758 API \uC0AC\uC6A9 \uC608\uC2DC \uCF54\uB4DC \uCEF4\uD3EC\uB10C\uD2B8\uC5D0 \uAD6C\uBB38 \uAC15\uC870\uB97C \uC801\uC6A9 </li><li${_scopeId}><p class="mb-1 font-medium"${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "nuxt content"
-            }, null, _parent2, _scopeId));
-            _push2(` \uBAA8\uB4C8\uC744 \uD65C\uC6A9\uD558\uC5EC Markdown \uAE30\uBC18\uC758 API \uBB38\uC11C\uB97C \uD3EC\uC2A4\uD305 \uC131\uD5A5\uC758 \uC6F9\uD398\uC774\uC9C0\uB85C \uC27D\uAC8C \uAD6C\uD604 </p> \uC815\uC801 \uD30C\uC77C(Markdown)\uC744 \uBC14\uB85C Vue \uCEF4\uD3EC\uB10C\uD2B8\uCC98\uB7FC \uC0AC\uC6A9\uD560 \uC218 \uC788\uC5B4 API \uBB38\uC11C\uD654 \uC791\uC5C5\uC774 \uAC04\uB2E8\uD558\uACE0 \uD6A8\uC728\uC801\uC774\uC5C8\uC74C<br${_scopeId}>`);
-            _push2(ssrRenderComponent(_component_Tag, {
-              "is-skill": true,
-              text: "ContentQuery"
-            }, null, _parent2, _scopeId));
-            _push2(`\uB97C \uD65C\uC6A9\uD558\uC5EC API \uAC80\uC0C9 \uAE30\uB2A5\uC744 \uAD6C\uD604 </li>`);
-          } else {
-            return [
-              createVNode("li", null, [
-                createVNode("p", { class: "mb-1 font-medium" }, [
-                  createVNode(_component_Tag, {
-                    "is-skill": true,
-                    text: "pinia"
-                  }),
-                  createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC API Playground \uD398\uC774\uC9C0 \uAD6C\uD604 ")
-                ]),
-                createTextVNode(" \uC0AC\uC6A9\uC790 \uC120\uD0DD \uC815\uBCF4\uB97C \uC804\uC5ED\uC801\uC73C\uB85C \uAD00\uB9AC\uD558\uACE0 \uC0C8\uB85C\uACE0\uCE68\uC774\uB098 \uD398\uC774\uC9C0 \uB77C\uC6B0\uD305\uC5D0\uB3C4 \uC0C1\uD0DC\uB97C \uC720\uC9C0\uD558\uAE30 \uC704\uD574 Pinia\uB97C \uB3C4\uC785 "),
-                createVNode("br"),
-                createTextVNode(" \uC774\uB97C \uD1B5\uD574 \uC0AC\uC6A9\uC790\uAC00 \uC120\uD0DD\uD55C \uAC1C\uBC1C \uC5B8\uC5B4\uC640 \uB77C\uC774\uBE0C\uB7EC\uB9AC\uC5D0 \uB9DE\uCDB0 API \uC0AC\uC6A9 \uC608\uC2DC \uCF54\uB4DC\uB97C \uC548\uC815\uC801\uC73C\uB85C \uBCF4\uC5EC\uC904 \uC218 \uC788\uB3C4\uB85D \uAD6C\uD604 ")
-              ]),
-              createVNode("li", { class: "font-medium" }, [
-                createVNode(_component_Tag, {
-                  "is-skill": true,
-                  text: "highlight.js"
-                }),
-                createTextVNode(" \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uD65C\uC6A9\uD558\uC5EC API Playground\uC758 API \uC0AC\uC6A9 \uC608\uC2DC \uCF54\uB4DC \uCEF4\uD3EC\uB10C\uD2B8\uC5D0 \uAD6C\uBB38 \uAC15\uC870\uB97C \uC801\uC6A9 ")
-              ]),
-              createVNode("li", null, [
-                createVNode("p", { class: "mb-1 font-medium" }, [
-                  createVNode(_component_Tag, {
-                    "is-skill": true,
-                    text: "nuxt content"
-                  }),
-                  createTextVNode(" \uBAA8\uB4C8\uC744 \uD65C\uC6A9\uD558\uC5EC Markdown \uAE30\uBC18\uC758 API \uBB38\uC11C\uB97C \uD3EC\uC2A4\uD305 \uC131\uD5A5\uC758 \uC6F9\uD398\uC774\uC9C0\uB85C \uC27D\uAC8C \uAD6C\uD604 ")
-                ]),
-                createTextVNode(" \uC815\uC801 \uD30C\uC77C(Markdown)\uC744 \uBC14\uB85C Vue \uCEF4\uD3EC\uB10C\uD2B8\uCC98\uB7FC \uC0AC\uC6A9\uD560 \uC218 \uC788\uC5B4 API \uBB38\uC11C\uD654 \uC791\uC5C5\uC774 \uAC04\uB2E8\uD558\uACE0 \uD6A8\uC728\uC801\uC774\uC5C8\uC74C"),
-                createVNode("br"),
-                createVNode(_component_Tag, {
-                  "is-skill": true,
-                  text: "ContentQuery"
-                }),
-                createTextVNode("\uB97C \uD65C\uC6A9\uD558\uC5EC API \uAC80\uC0C9 \uAE30\uB2A5\uC744 \uAD6C\uD604 ")
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalGallery, null, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<!--[-->`);
-            ssrRenderList(imageList, (item, i2) => {
-              _push2(ssrRenderComponent(_component_ProjectModalGalleryImage, {
-                key: i2,
-                title: item.title,
-                src: item.src,
-                onClick: () => {
-                  selectedItemSrc.value = item.src;
-                }
-              }, null, _parent2, _scopeId));
-            });
-            _push2(`<!--]-->`);
-          } else {
-            return [
-              (openBlock(), createBlock(Fragment, null, renderList(imageList, (item, i2) => {
-                return createVNode(_component_ProjectModalGalleryImage, {
-                  key: i2,
-                  title: item.title,
-                  src: item.src,
-                  onClick: () => {
-                    selectedItemSrc.value = item.src;
-                  }
-                }, null, 8, ["title", "src", "onClick"]);
-              }), 64))
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(ssrRenderComponent(_component_ProjectModalGalleryDetail, {
-        "is-open": unref(isModalOpen),
-        onCloseGallery: closeModal
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<img${ssrRenderAttr("src", unref(selectedItemSrc))}${_scopeId}>`);
-          } else {
-            return [
-              createVNode("img", { src: unref(selectedItemSrc) }, null, 8, ["src"])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</div>`);
-    };
-  }
-});
-const _sfc_setup$2 = _sfc_main$2.setup;
-_sfc_main$2.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Project/Baas.vue");
-  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : undefined;
-};
-const _imports_0 = publicAssetsURL("/portfolio/project.png");
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "index",
   __ssrInlineRender: true,
@@ -4670,19 +3442,17 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     function closeModal() {
       router.push({ query: {} });
     }
-    const tagOrder = ["nuxt.js", "vue.js", "swift UI", "minio", "spring boot", "pwa", "golang"];
+    const tagOrder = ["nuxt.js", "vue.js", "swift UI", "jQuery", "minio", "spring boot", "pwa", "golang"];
     const filteredProjects = computed(
       () => selectedTag.value ? projects.filter((project) => project.tags.includes(selectedTag.value)) : projects
     );
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_PageSection = _sfc_main$p;
-      const _component_PageTitle = _sfc_main$l;
-      const _component_ProjectCard = _sfc_main$d;
-      const _component_ProjectModal = _sfc_main$c;
-      const _component_ProjectIncheon = _sfc_main$7;
-      const _component_ProjectFdid = _sfc_main$4;
-      const _component_ProjectToken = _sfc_main$3;
-      const _component_ProjectBaas = _sfc_main$2;
+      const _component_PageSection = _sfc_main$k;
+      const _component_PageTitle = _sfc_main$g;
+      const _component_ProjectCard = _sfc_main$8;
+      const _component_ProjectModal = _sfc_main$7;
+      const _component_ProjectIncheon = __nuxt_component_4;
+      const _component_ProjectFdid = __nuxt_component_5;
       const _directive_dompurify_html = resolveDirective("dompurify-html");
       let _temp0;
       _push(`<div${ssrRenderAttrs(_attrs)}>`);
@@ -4714,7 +3484,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(`<div class="flex flex-col gap-4"${_scopeId}><p class="bg-zinc-100 p-2 rounded-md flex flex-row gap-1 text-base font-normal tracking-normal"${_scopeId}> \u{1F481}\u{1F3FB} <span${_scopeId}> \uB2F4\uB2F9\uD55C \uC8FC\uC694 \uD504\uB85C\uC81D\uD2B8\uB97C \uCD5C\uC2E0 \uC21C\uC73C\uB85C \uAD6C\uC131\uD588\uC2B5\uB2C8\uB2E4.<br${_scopeId}>\uD574\uB2F9 \uD504\uB85C\uC81D\uD2B8\uB97C \uD074\uB9AD\uD558\uBA74 \uC8FC\uC694 \uB0B4\uC6A9, \uC5ED\uD560 \uBC0F \uAE30\uC5EC\uB3C4, \uC218\uD589 \uAE30\uAC04 \uB4F1\uC744 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. </span></p><div class="flex flex-row flex-wrap gap-2 text-base font-normal"${_scopeId}><button class="${ssrRenderClass([[unref(selectedTag) == "" ? "bg-gray-600 text-white" : "bg-zinc-100 text-gray-800"], "px-4 py-1 rounded-md"])}"${_scopeId}> All </button><!--[-->`);
+            _push2(`<div class="flex flex-col gap-4"${_scopeId}><p class="bg-zinc-100 p-2 rounded-md flex flex-row gap-1 text-base font-normal tracking-normal"${_scopeId}> \u{1F481}\u{1F3FB} <span${_scopeId}> \uB2F4\uB2F9\uD55C \uD504\uB85C\uC81D\uD2B8\uB97C \uCD5C\uC2E0 \uC21C\uC73C\uB85C \uAD6C\uC131\uD588\uC2B5\uB2C8\uB2E4.<br${_scopeId}>\uD574\uB2F9 \uD504\uB85C\uC81D\uD2B8\uB97C \uD074\uB9AD\uD558\uBA74 \uC8FC\uC694 \uB0B4\uC6A9, \uC5ED\uD560 \uBC0F \uAE30\uC5EC\uB3C4, \uC218\uD589 \uAE30\uAC04 \uB4F1\uC744 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. </span></p><div class="flex flex-row flex-wrap gap-2 text-base font-normal"${_scopeId}><button class="${ssrRenderClass([[unref(selectedTag) == "" ? "bg-gray-600 text-white" : "bg-zinc-100 text-gray-800"], "px-4 py-1 rounded-md"])}"${_scopeId}> All </button><!--[-->`);
             ssrRenderList(tagOrder, (tag) => {
               _push2(`<button class="${ssrRenderClass([
                 "px-3 py-1 rounded-md",
@@ -4726,8 +3496,9 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               _push2(ssrRenderComponent(_component_ProjectCard, {
                 key: project.id,
                 tags: project.tags,
-                onClick: ($event) => openModal(project.id, project.title)
-              }, {
+                onClick: ($event) => openModal(project.id, project.title),
+                "no-image": project.noImage || false
+              }, createSlots({
                 title: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
                     _push3(`${ssrInterpolate(project.title)}`);
@@ -4749,19 +3520,24 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                     ];
                   }
                 }),
-                image: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                  if (_push3) {
-                    _push3(`<img${ssrRenderAttr("src", project.image)}${_scopeId2}>`);
-                  } else {
-                    return [
-                      createVNode("img", {
-                        src: project.image
-                      }, null, 8, ["src"])
-                    ];
-                  }
-                }),
                 _: 2
-              }, _parent2, _scopeId));
+              }, [
+                !project.noImage ? {
+                  name: "image",
+                  fn: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                    if (_push3) {
+                      _push3(`<img${ssrRenderAttr("src", project.image)}${_scopeId2}>`);
+                    } else {
+                      return [
+                        createVNode("img", {
+                          src: project.image
+                        }, null, 8, ["src"])
+                      ];
+                    }
+                  }),
+                  key: "0"
+                } : undefined
+              ]), _parent2, _scopeId));
             });
             _push2(`<!--]--></div></div>`);
           } else {
@@ -4783,7 +3559,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                   createVNode("p", { class: "bg-zinc-100 p-2 rounded-md flex flex-row gap-1 text-base font-normal tracking-normal" }, [
                     createTextVNode(" \u{1F481}\u{1F3FB} "),
                     createVNode("span", null, [
-                      createTextVNode(" \uB2F4\uB2F9\uD55C \uC8FC\uC694 \uD504\uB85C\uC81D\uD2B8\uB97C \uCD5C\uC2E0 \uC21C\uC73C\uB85C \uAD6C\uC131\uD588\uC2B5\uB2C8\uB2E4."),
+                      createTextVNode(" \uB2F4\uB2F9\uD55C \uD504\uB85C\uC81D\uD2B8\uB97C \uCD5C\uC2E0 \uC21C\uC73C\uB85C \uAD6C\uC131\uD588\uC2B5\uB2C8\uB2E4."),
                       createVNode("br"),
                       createTextVNode("\uD574\uB2F9 \uD504\uB85C\uC81D\uD2B8\uB97C \uD074\uB9AD\uD558\uBA74 \uC8FC\uC694 \uB0B4\uC6A9, \uC5ED\uD560 \uBC0F \uAE30\uC5EC\uB3C4, \uC218\uD589 \uAE30\uAC04 \uB4F1\uC744 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. ")
                     ])
@@ -4810,8 +3586,9 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                     return openBlock(), createBlock(_component_ProjectCard, {
                       key: project.id,
                       tags: project.tags,
-                      onClick: ($event) => openModal(project.id, project.title)
-                    }, {
+                      onClick: ($event) => openModal(project.id, project.title),
+                      "no-image": project.noImage || false
+                    }, createSlots({
                       title: withCtx(() => [
                         createTextVNode(toDisplayString(project.title), 1)
                       ]),
@@ -4820,13 +3597,18 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                           [_directive_dompurify_html, project.desc]
                         ])
                       ]),
-                      image: withCtx(() => [
-                        createVNode("img", {
-                          src: project.image
-                        }, null, 8, ["src"])
-                      ]),
                       _: 2
-                    }, 1032, ["tags", "onClick"]);
+                    }, [
+                      !project.noImage ? {
+                        name: "image",
+                        fn: withCtx(() => [
+                          createVNode("img", {
+                            src: project.image
+                          }, null, 8, ["src"])
+                        ]),
+                        key: "0"
+                      } : undefined
+                    ]), 1032, ["tags", "onClick", "no-image"]);
                   }), 128))
                 ])
               ])
@@ -4854,16 +3636,12 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               _push2(ssrRenderComponent(_component_ProjectIncheon, null, null, _parent2, _scopeId));
             } else if (unref(queryValue) === "did") {
               _push2(ssrRenderComponent(_component_ProjectFdid, null, null, _parent2, _scopeId));
-            } else if (unref(queryValue) === "token") {
-              _push2(ssrRenderComponent(_component_ProjectToken, null, null, _parent2, _scopeId));
-            } else if (unref(queryValue) === "baas") {
-              _push2(ssrRenderComponent(_component_ProjectBaas, null, null, _parent2, _scopeId));
             } else {
               _push2(`<!---->`);
             }
           } else {
             return [
-              unref(queryValue) === "incheontp" ? (openBlock(), createBlock(_component_ProjectIncheon, { key: 0 })) : unref(queryValue) === "did" ? (openBlock(), createBlock(_component_ProjectFdid, { key: 1 })) : unref(queryValue) === "token" ? (openBlock(), createBlock(_component_ProjectToken, { key: 2 })) : unref(queryValue) === "baas" ? (openBlock(), createBlock(_component_ProjectBaas, { key: 3 })) : createCommentVNode("", true)
+              unref(queryValue) === "incheontp" ? (openBlock(), createBlock(_component_ProjectIncheon, { key: 0 })) : unref(queryValue) === "did" ? (openBlock(), createBlock(_component_ProjectFdid, { key: 1 })) : createCommentVNode("", true)
             ];
           }
         }),
@@ -4888,8 +3666,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     }));
     ref("");
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_PageWrapper = __nuxt_component_0$1;
-      const _component_AboutMe = __nuxt_component_1;
+      const _component_PageWrapper = __nuxt_component_0$2;
+      const _component_AboutMe = __nuxt_component_1$1;
       const _component_Skills = __nuxt_component_2;
       const _component_Project = _sfc_main$1;
       _push(ssrRenderComponent(_component_PageWrapper, _attrs, {
@@ -4919,4 +3697,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-Bz9YGAVa.mjs.map
+//# sourceMappingURL=index-AJlt1ro7.mjs.map

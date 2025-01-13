@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { moveToWeb } from '../utils/common';
 const activeTab = ref('')
 function scrollToSection(id: string) {
     const section = document.getElementById(id)
@@ -21,9 +22,7 @@ const detectActiveTab = () => {
     })
 }
 
-function moveToWeb(url: string) {
-    window.open(url)
-}
+
 onMounted(() => {
     detectActiveTab() // 초기 활성 탭 감지
     window.addEventListener('scroll', detectActiveTab)

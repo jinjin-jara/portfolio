@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import { projects, getQueryValue, getTitleById } from '../../portfolio/utils/common'
+import { projects, getQueryValue, getTitleById } from '../../utils/common'
 const router = useRouter()
 const route = useRoute()
 

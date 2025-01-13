@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { AppConfigInput } from '@nuxt/schema'
-import { AppSetup } from './project/utils/app'
+import { AppSetup } from './utils/app'
 
 AppSetup()
 const app = useAppConfig() as unknown as AppConfigInput

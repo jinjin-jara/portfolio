@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     // global transition
     // pageTransition: { name: 'page', mode: 'out-in' },
     // layoutTransition: { name: 'layout', mode: 'out-in' },
+    baseURL: '/portfolio/', // repository 이름으로 설정
   },
 
   // windicss

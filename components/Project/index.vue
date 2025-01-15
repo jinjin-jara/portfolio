@@ -21,7 +21,7 @@ function closeModal() {
     router.push({ query: {} }) // 쿼리 값 제거
 }
 
-const tagOrder = ['nuxt.js', 'vue.js', 'pwa', 'swift UI', 'minio', 'spring boot','golang']
+const tagOrder = ['nuxt.js', 'vue.js', 'pwa', 'swift UI', 'spring boot', 'golang']
 
 // 선택된 태그에 맞게 필터링된 프로젝트
 const filteredProjects = computed(() =>
@@ -70,7 +70,7 @@ onMounted(() => {
                     </div>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-4">
-                    <ProjectCard v-for="project in filteredProjects" :key="project.id" :tags="project.tags"
+                    <ProjectCard v-for="project in filteredProjects" :key="project.id" :tags="project.tags" :no-image="project.noImage"
                         @click="openModal(project.id, project.title)">
                         <template #title>
                             {{ project.title }}
@@ -78,7 +78,7 @@ onMounted(() => {
                         <template #desc>
                             <span class="text-[0.9rem]" v-dompurify-html="project.desc" />
                         </template>
-                        <template #image>
+                        <template #image v-if="!project.noImage">
                             <img :src="project.image" />
                         </template>
                     </ProjectCard>
@@ -93,6 +93,7 @@ onMounted(() => {
             <ProjectFdid v-else-if="queryValue === 'did'" />
             <ProjectBaas v-else-if="queryValue === 'baas'" />
             <ProjectToken v-else-if="queryValue === 'token'" />
+            <ProjectRefactoring v-else-if="queryValue === 'wallet-refactor'" />
         </ProjectModal>
     </div>
 </template>

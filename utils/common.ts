@@ -14,6 +14,7 @@ export const projects = [
     title: 'DID 프로젝트',
     desc: `PWA 기반의 DID(Decentralized Identity, 분산신원확인) 웹 페이지 개발 후, 웹 앱(IOS)로 리팩토링하였습니다.`,
     image: '/portfolio/fdid.png',
+    noImage: false,
   },
   {
     id: 'token',
@@ -21,6 +22,7 @@ export const projects = [
     title: '비상장 토큰 증권 플랫폼 개발',
     desc: `비상장 토큰을 거래할 수 있는 거래 플랫폼 웹과 트랜잭션을 추적할 수 있는 모니터링 웹을 개발하였습니다.`,
     image: '/portfolio/trade.png',
+    noImage: false,
   },
   {
     id: 'baas',
@@ -28,14 +30,15 @@ export const projects = [
     title: 'Baas(Blockchain as a Service) 웹 플랫폼 개발',
     desc: `각종 블록체인 API를 쉽게 사용할 수 있는 가이드 플랫폼 웹을 개발하였습니다.`,
     image: '/portfolio/fplatform.png',
+    noImage: false,
   },
-  // {
-  //   id: 'wallet-refactor',
-  //   tags: ['vue.js'],
-  //   title: '전자지갑 웹 리팩토링 (jQuery → Vue.js)',
-  //   desc: `jQuery로 구현된 전자지갑 웹을 vue.js로 리팩토링하였습니다.`,
-  //   noImage: true,
-  // },
+  {
+    id: 'wallet-refactor',
+    tags: ['vue.js'],
+    title: '전자지갑 웹 리팩토링 (jQuery → Vue.js)',
+    desc: `jQuery로 구현된 전자지갑 웹을 vue.js로 리팩토링하였습니다.`,
+    noImage: true,
+  },
   // {
   //   id: 'patent',
   //   tags: ['jQuery', 'spring boot'],

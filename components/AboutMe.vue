@@ -5,7 +5,7 @@ const fullText1 = '안녕하세요. 웹 프론트엔드 개발자 최진경입�
 const fullText2 = '웹과 모바일 경계를 허물며, 사용자 경험과 기술적 완성도를 추구합니다.'
 
 // 반응형 상태로 텍스트 선언
-const animatedText1 = ref('🖐🏻 ')
+const animatedText1 = ref('')
 const animatedText2 = ref('')
 const isTyping = ref(true) // 커서 깜빡임 상태
 const email = 'jinjinjara0610@gmail.com'
@@ -74,10 +74,10 @@ onMounted(async () => {
             </div>
             <Card class="leading-7 px-3 py-4 text-base lg:text-lg lg:w-135 min:w-86 tracking-tighter">
               <p>
-                {{ animatedText1 }}
+                <span class="w-4 pr-2">🖐🏻</span>{{ animatedText1 }}
                 <span v-if="isTyping && !animatedText2" class="cursor" />
               </p>
-              <p class="ml-[24px] lg:ml-[29px]">
+              <p class="pl-6">
                 {{ animatedText2 }}
                 <span v-if="animatedText2" class="cursor"></span>
               </p>

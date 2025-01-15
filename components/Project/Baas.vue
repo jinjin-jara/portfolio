@@ -14,22 +14,6 @@ const imageList: { src: string, title: string }[] = [
         title: 'API Playground',
         src: '/portfolio/baas1.png'
     },
-    {
-        title: '상품 상세페이지 및 거래화면',
-        src: '/portfolio/token2.png'
-    },
-    {
-        title: '마이페이지',
-        src: '/portfolio/token3.png'
-    },
-    {
-        title: '블록체인 대시보드-트랜잭션 페이지',
-        src: '/portfolio/token4.png'
-    },
-    {
-        title: '블록체인 대시보드-토큰 상세 페이지',
-        src: '/portfolio/token5.png'
-    },
 ]
 </script>
 <template>
@@ -73,6 +57,17 @@ const imageList: { src: string, title: string }[] = [
         <ProjectModalFunction>
             <li>
                 <p class="mb-1 font-medium">
+                    <Tag :is-skill="true" text="nuxt plugin" />과 <Tag :is-skill="true" text="definePageMeta" />를 활용한 웹 내 페이지 검색 기능 구현
+                </p>
+                <div class="bg-zinc-200 px-3 py-2 rounded-lg">
+                    nuxt plugin은 Nuxt 애플리케이션이 구동될 때 특정 코드나 외부 라이브러리를 초기화하고자 할 때 사용되는 개념입니다.
+                이 개념과 Nuxt에서 제공하는 <Tag :is-skill="true" text="definePageMeta" /> 메서드를 사용하여 메타 정보에 페이지 타이틀을 선언하여 페이지 검색 기능을 구현하였습니다.
+                <p class="mt-2 text-blue-500 cursor-pointer hover:text-blue-600 duration-300" @click="moveToWeb('https://jinnnkcoding.tistory.com/237')">관련 블로그 포스팅 보기</p>
+                </div>
+                
+            </li>
+            <li>
+                <p class="mb-1 font-medium">
                     <Tag :is-skill="true" text="pinia" /> 라이브러리를 활용하여 API Playground 페이지 구현
                 </p>
                 사용자 선택 정보를 전역적으로 관리하고 새로고침이나 페이지 라우팅에도 상태를 유지하기 위해 Pinia를 도입 <br />
@@ -87,6 +82,10 @@ const imageList: { src: string, title: string }[] = [
                 </p>
                 정적 파일(Markdown)을 바로 Vue 컴포넌트처럼 사용할 수 있어 API 문서화 작업이 간단하고 효율적이었음<br />
                 <Tag :is-skill="true" text="ContentQuery" />를 활용하여 API 검색 기능을 구현
+            </li>
+            <li>
+                <p class="mb-1 font-medium"><Tag :is-skill="true" text="Tailwind CSS" />를 사용하여 효율적이고 일관된 스타일링 구현</p>
+                별도의 CSS 파일 없이 HTML에서 바로 스타일링을 적용할 수 있어 생산성을 크게 향상시킬 수 있었음
             </li>
             
         </ProjectModalFunction>

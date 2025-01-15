@@ -69,7 +69,7 @@
                         <img src="/portfolio/docker.png" />
                     </template>
                 </SkillsCard>
-                <div class="col-span-2 flex flex-row items-center gap-2">
+                <div class="lg:col-span-2 flex flex-row flex-wrap lg:flex-nowrap items-center gap-2">
                     <SkillsCard title="jira" :none-level="true">
                         <template #image>
                             <img src="/portfolio/jira.png" />

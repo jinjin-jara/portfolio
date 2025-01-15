@@ -24,11 +24,11 @@ const imageList: { src: string, title: string }[] = [
     },
     {
         title: '블록체인 대시보드-트랜잭션 페이지',
-        src: '/portfolio/token4.png'
+        src: '/portfolio/fsto-transaction.png'
     },
     {
-        title: '블록체인 대시보드-토큰 상세 페이지',
-        src: '/portfolio/token5.png'
+        title: '블록체인 대시보드-토큰 페이지',
+        src: '/portfolio/fsto-token.png'
     },
 ]
 </script>

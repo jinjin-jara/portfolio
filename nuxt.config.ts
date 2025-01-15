@@ -52,6 +52,17 @@ export default defineNuxtConfig({
     // pageTransition: { name: 'page', mode: 'out-in' },
     // layoutTransition: { name: 'layout', mode: 'out-in' },
     baseURL: '/portfolio/', // repository 이름으로 설정
+    head: {
+      title: 'choi jin kyung portfolio',
+      meta: [
+        { name: 'description', content: 'This is choi jin kyung portfolio.' },
+        { property: 'og:title', content: 'choi jin kyung portfolio' },
+        { property: 'og:description', content: 'This is choi jin kyung portfolio.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: '/favicon.png' }, // 정적 이미지 경로
+        { property: 'og:url', content: 'https://github.com/jinjin-jara/portfolio' }, // 배포 URL
+      ],
+    },
   },
 
   // windicss

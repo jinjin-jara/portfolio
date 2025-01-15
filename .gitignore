@@ -7,6 +7,7 @@ node_modules
 
 # build or generate
 .nuxt
+.output
 
 # IDE
 .idea

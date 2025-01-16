@@ -34,7 +34,7 @@ const imageList: { src: string, title: string }[] = [
 </script>
 <template>
     <div class="flex flex-col">
-        <ProjectModalSummary :tags="['nuxt.js', 'spring boot']">
+        <ProjectModalSummary :tags="['nuxt.js']">
             <template #period>
                 2023.09 ~ 2023.12
             </template>

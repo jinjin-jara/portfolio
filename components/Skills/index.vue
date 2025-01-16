@@ -18,16 +18,16 @@
                         <img src="/portfolio/typescript.png" />
                     </template>
                 </SkillsCard>
-                <SkillsCard title="Java" level="중급">
+                <!-- <SkillsCard title="Java" level="중급">
                     <template #image>
                         <img src="/portfolio/java.png" />
                     </template>
-                </SkillsCard>
-                <SkillsCard title="Swift" level="초급">
+                </SkillsCard> -->
+                <!-- <SkillsCard title="Swift" level="초급">
                     <template #image>
                         <img src="/portfolio/swift.png" />
                     </template>
-                </SkillsCard>
+                </SkillsCard> -->
             </SkillsComponent>
             <SkillsComponent title="Framework / Library">
                 <SkillsCard title="Vue">
@@ -45,11 +45,11 @@
                         <img src="/portfolio/react.png" />
                     </template>
                 </SkillsCard>
-                <SkillsCard title="Spring Boot" level="중급">
+                <!-- <SkillsCard title="Spring Boot" level="중급">
                     <template #image>
                         <img src="/portfolio/springboot.png" />
                     </template>
-                </SkillsCard>
+                </SkillsCard> -->
             </SkillsComponent>
             <SkillsComponent title="Database">
                 <SkillsCard title="postgresql" level="중급">

@@ -8,9 +8,17 @@ export const projects = [
   //        프로젝트의 전체 구축 및 운영에 투입되었습니다.`,
   //   image: '/portfolio/incheontp.png',
   // },
+  // {
+  //   id: 'f-baas',
+  //   tags: ['next.js', 'figma'],
+  //   title: 'Baas 2차 플랫폼 개발(진행중)',
+  //   desc: `1차 Baas(Blockchain as a Service)의 확장판을 Next.js로 개발 중에 있습니다.`,
+  //   image: '/portfolio/f-baas.png',
+  //   noImage: false,
+  // },
   {
     id: 'did',
-    tags: ['nuxt.js', 'pwa', 'swift UI', 'golang'],
+    tags: ['nuxt.js', 'pwa', 'swift UI'],
     title: 'DID 프로젝트',
     desc: `PWA 기반의 DID(Decentralized Identity, 분산신원확인) 웹 페이지 개발 후, 웹 앱(IOS)로 리팩토링하였습니다.`,
     image: '/portfolio/fdid.png',

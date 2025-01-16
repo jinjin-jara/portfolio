@@ -21,7 +21,7 @@ function closeModal() {
     router.push({ query: {} }) // 쿼리 값 제거
 }
 
-const tagOrder = ['nuxt.js', 'vue.js', 'pwa', 'swift UI', 'spring boot', 'golang']
+const tagOrder = ['nuxt.js', 'vue.js', 'pwa']
 
 // 선택된 태그에 맞게 필터링된 프로젝트
 const filteredProjects = computed(() =>
@@ -89,8 +89,7 @@ onMounted(() => {
             <template #title>
                 {{ modalTitle }}
             </template>
-            <ProjectIncheon v-if="queryValue === 'incheontp'" />
-            <ProjectFdid v-else-if="queryValue === 'did'" />
+            <ProjectFdid v-if="queryValue === 'did'" />
             <ProjectBaas v-else-if="queryValue === 'baas'" />
             <ProjectToken v-else-if="queryValue === 'token'" />
             <ProjectRefactoring v-else-if="queryValue === 'wallet-refactor'" />

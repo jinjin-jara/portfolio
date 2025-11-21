@@ -32,7 +32,7 @@ const filteredProjects = computed(() =>
 
 onMounted(() => {
     const queryResult = getQueryValue('project')
-    if ( queryResult !== '') {
+    if (queryResult !== '') {
         modalTitle.value = getTitleById(queryResult)
     }
 })
@@ -70,8 +70,8 @@ onMounted(() => {
                     </div>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-4">
-                    <ProjectCard v-for="project in filteredProjects" :key="project.id" :tags="project.tags" :no-image="project.noImage"
-                        @click="openModal(project.id, project.title)">
+                    <ProjectCard v-for="project in filteredProjects" :key="project.id" :tags="project.tags"
+                        :no-image="project.noImage" @click="openModal(project.id, project.title)">
                         <template #title>
                             {{ project.title }}
                         </template>
@@ -89,7 +89,8 @@ onMounted(() => {
             <template #title>
                 {{ modalTitle }}
             </template>
-            <ProjectFdid v-if="queryValue === 'did'" />
+            <ProjectBaas2 v-if="queryValue === 'baas2'" />
+            <ProjectFdid v-else-if="queryValue === 'did'" />
             <ProjectBaas v-else-if="queryValue === 'baas'" />
             <ProjectToken v-else-if="queryValue === 'token'" />
             <ProjectRefactoring v-else-if="queryValue === 'wallet-refactor'" />

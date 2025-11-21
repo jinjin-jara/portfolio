@@ -8,14 +8,14 @@ export const projects = [
   //        프로젝트의 전체 구축 및 운영에 투입되었습니다.`,
   //   image: '/portfolio/incheontp.png',
   // },
-  // {
-  //   id: 'f-baas',
-  //   tags: ['next.js', 'figma'],
-  //   title: 'Baas 2차 플랫폼 개발(진행중)',
-  //   desc: `1차 Baas(Blockchain as a Service)의 확장판을 Next.js로 개발 중에 있습니다.`,
-  //   image: '/portfolio/f-baas.png',
-  //   noImage: false,
-  // },
+  {
+    id: 'baas',
+    tags: ['next.js', 'figma'],
+    title: 'Baas 플랫폼 개발',
+    desc: `블록체인을 모르는 사용자들도 블록체인 서비스를 쉽게 경험할 수 있는 서비스형 플랫폼 웹을 Next.js로 구축하였습니다.`,
+    image: '/portfolio/f-baas.png',
+    noImage: false,
+  },
   {
     id: 'did',
     tags: ['nuxt.js', 'pwa', 'swift UI'],
@@ -33,7 +33,7 @@ export const projects = [
     noImage: false,
   },
   {
-    id: 'baas',
+    id: 'asset',
     tags: ['nuxt.js'],
     title: 'Baas(Blockchain as a Service) 웹 플랫폼 개발',
     desc: `각종 블록체인 API를 쉽게 사용할 수 있는 가이드 플랫폼 웹을 개발하였습니다.`,
@@ -64,7 +64,7 @@ export const projects = [
 ]
 
 export function getTitleById(projectId: string) {
-  const project = projects.find(p => p.id === projectId)
+  const project = projects.find((p) => p.id === projectId)
   return project ? project.title : ''
 }
 

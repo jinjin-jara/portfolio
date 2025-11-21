@@ -30,9 +30,9 @@
                 </SkillsCard> -->
             </SkillsComponent>
             <SkillsComponent title="Framework / Library">
-                <SkillsCard title="Vue">
+                <SkillsCard title="Next">
                     <template #image>
-                        <img src="/portfolio/vue.png" />
+                        <img src="/portfolio/next.png" />
                     </template>
                 </SkillsCard>
                 <SkillsCard title="Nuxt">
@@ -40,9 +40,9 @@
                         <img src="/portfolio/nuxt.png" />
                     </template>
                 </SkillsCard>
-                <SkillsCard title="React" level="초급">
+                <SkillsCard title="Vue">
                     <template #image>
-                        <img src="/portfolio/react.png" />
+                        <img src="/portfolio/vue.png" />
                     </template>
                 </SkillsCard>
                 <!-- <SkillsCard title="Spring Boot" level="중급">

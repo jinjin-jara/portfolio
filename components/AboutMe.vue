@@ -57,8 +57,7 @@ onMounted(async () => {
 <template>
   <PageSection section-id="about-me">
     <div class="flex flex-col">
-      <div
-      class="lg:pb-10 pb-4 flex flex-col lg:flex-row gap-4 items-center lg:justify-between justify-center">
+      <div class="lg:pb-10 pb-4 flex flex-col lg:flex-row gap-4 items-center lg:justify-between justify-center">
         <div class="w-60 lg:w-80">
           <img src="/portfolio/profile2.png" />
         </div>
@@ -69,7 +68,8 @@ onMounted(async () => {
               <div class="lg:w-7 w-4">
                 <img src="/portfolio/developer.png" />
               </div>
-              <p class="text-center lg:text-left text-2xl lg:text-3xl font-semibold text-gray-700">Web Frontend Developer
+              <p class="text-center lg:text-left text-2xl lg:text-3xl font-semibold text-gray-700">Web Frontend
+                Developer
               </p>
             </div>
             <Card class="leading-7 px-3 py-4 text-base lg:text-lg lg:w-135 min:w-86 tracking-tighter">
@@ -102,10 +102,24 @@ onMounted(async () => {
             Q. 본인의 <span class="font-bold bg-blue-100 text-gray-800">강점</span>이 뭐라고 생각하시나요?
           </template>
           <template #answer>
-            저는 <span class="font-semibold">Nuxt.js</span>와 <span class="font-semibold">Vue.js</span>를 기반으로 한 프론트엔드 개발을
-            전문으로 하며, PWA(Progressive Web App)와 iOS 웹앱(WebView) 등 <span class="font-semibold">웹과 모바일 환경 모두를 아우르는 통합적 솔루션을
-              개발</span>해왔습니다. 또한, 프로젝트의 초기 설계 단계부터 UI/UX 디자인, 프론트엔드 구현, 백엔드 연동, 그리고 유지 보수까지 전반적인 개발 과정에 참여해, 완성도 높은 결과물을
-            만들어왔습니다.
+            저의 강점은 <span class="font-semibold">프론트엔드 전반을 처음부터 끝까지 책임질 수 있는 end-to-end 개발 역량</span>입니다.<br />
+            초기에는 Vue.js와 Nuxt.js를 기반으로 다양한 프로젝트를 구축하며 SSR, 상태 관리, 성능 최적화에 대한 경험을 쌓았고, 최근에는 <span
+              class="font-semibold">Next.js 기반의 React 개발을 중심으로 실제 서비스 구축 비중을 크게 확장</span>해왔습니다.
+
+            <br /><br />웹 서비스뿐 아니라 <span class="font-semibold">PWA, iOS WebView, 모바일 웹 환경까지 모두 고려한 통합 프론트엔드 개발
+              경험</span>을 보유하고 있으며, 사용자 경험과 기술 구조를 함께 설계하는 것을 중요하게 생각합니다.
+
+            <br /><br />또한 프로젝트 초기 설계부터
+            <span class="font-semibold">UI/UX 플로우 구성 → FE 아키텍처 설계 → API 연동 구조 정의 → 구현 → 테스트 → 배포 → 운영</span>
+            까지 전 과정을 직접 경험해, 단순 화면 개발이 아니라 <span class="font-semibold">완성도 있는 서비스 구축</span>을 목표로 일해왔습니다.
+
+            <br /><br />Web3 연동, 성능 최적화, 서버사이드 렌더링 구조 개선, 복잡한 상태 관리 설계 등 난도 있는 기술 문제를 해결해본 실전 경험도 많아, 빠르게 변화하는 기술 스택
+            환경에서도 안정적으로 성과를
+            만드는 것이 저의 강점입니다.
+
+            <br /><br />정리하자면, 저는
+            <span class="font-semibold">"최신 프론트엔드 환경에서, 사용자 경험과 기술 구조를 함께 설계하고 구현할 수 있는 개발자”</span>
+            라는 점이 가장 큰 경쟁력입니다.
           </template>
         </Interview>
         <Interview>
@@ -113,12 +127,20 @@ onMounted(async () => {
             Q. 본인이 추구하는 <span class="font-bold bg-blue-100 text-gray-800">개발 가치</span>는?
           </template>
           <template #answer>
-            <p class="font-semibold mb-1">사용자 중심의 설계</p>
-            저는 단순히 "작동하는 코드"를 넘어, 사용자가 원하는 경험을 제공하는 데 초점을 맞춥니다. 웹과 모바일 앱에서 동일한 인터페이스와 성능을 제공하기 위해 끊임없이 고민하며, 사용자 경험을
-            최적화하는 데 주력합니다.
+            <p class="font-semibold mb-1">사용자가 ‘의도한 경험’을 그대로 전달하는 개발</p>
+            저는 기능 구현 자체보다 <span class="font-semibold">사용자가 어떤 흐름으로 서비스를 경험하는지</span>를 우선순위로 둡니다.
+            <br />BaaS와 같은 서비스 플랫폼을 개발해오면서 다양한 유형의 사용자 요구를 관찰해왔고, 그 과정에서 개발자가 편한 구조보다 <span class="font-semibold">사용자가
+              자연스럽게
+              이해하고 사용할 수 있는 UI/UX</span>가 결국 좋은
+            서비스라는 확신을 가지게 되었습니다.
 
-            <p class="font-semibold mt-4 mb-1">문제 해결을 위한 적극적 접근</p>
-            새로운 기술을 배우고 기존 시스템을 개선하는 데 열정적입니다. 특히, 웹과 네이티브 환경의 연결과 같은 복잡한 과제를 해결하며 얻은 경험은 저를 한층 성장하게 했습니다.
+            <p class="font-semibold mt-5 mb-1">제품 전체를 바라보는 엔드투엔드 관점</p>
+            기획–설계–개발–배포–유지보수까지 전체 흐름을 이해하고 직접 참여해온 경험 덕분에,
+            저는 단순히 화면을 만드는 개발자가 아니라 <span class="font-semibold">제품의 완성도를 함께 책임지는 사람</span>을 지향합니다.
+
+            <br />특히 서비스 플랫폼 특성상 구조적 확장성과 유지보수성이 매우 중요한데,
+            이를 고려한 아키텍처 설계와 컴포넌트 구조화에 강점을 가지고 있고,
+            <span class="font-semibold">사용자 가치와 비즈니스 목표를 동시에 만족시키는 선택</span>을 늘 고민합니다.
           </template>
         </Interview>
       </PageSmallSection>
@@ -138,7 +160,7 @@ onMounted(async () => {
           <p class="text-right lg:text-left">
             <Tag text="웹 개발자로 근무중" class="mr-2" />
             2022.03 ~ 현재
-            
+
           </p>
         </div>
         <div class="w-full flex lg:flex-row lg:justify-between flex-col gap-2 lg:items-center">
@@ -172,9 +194,12 @@ onMounted(async () => {
 
 /* 깜빡임 애니메이션 */
 @keyframes blink {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }

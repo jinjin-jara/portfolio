@@ -12,23 +12,23 @@ function closeModal() {
 const imageList: { src: string, title: string }[] = [
     {
         title: '메인 화면',
-        src: '/portfolio/token1.png'
+        src: '/portfolio/portfolio/token1.png'
     },
     {
         title: '상품 상세페이지 및 거래화면',
-        src: '/portfolio/token2.png'
+        src: '/portfolio/portfolio/token2.png'
     },
     {
         title: '마이페이지',
-        src: '/portfolio/token3.png'
+        src: '/portfolio/portfolio/token3.png'
     },
     {
         title: '블록체인 대시보드-트랜잭션 페이지',
-        src: '/portfolio/token4.png'
+        src: '/portfolio/portfolio/token4.png'
     },
     {
         title: '블록체인 대시보드-토큰 상세 페이지',
-        src: '/portfolio/token5.png'
+        src: '/portfolio/portfolio/token5.png'
     },
 ]
 </script>

@@ -16,7 +16,7 @@ defineProps({
             <img 
                 :src="src" 
                 :alt="title" 
-                class="h-full object-cover"
+                class="h-[150px] object-cover w-[270px]"
             />
         </Card>
         <span class="text-sm text-gray-600">{{ title }}</span>

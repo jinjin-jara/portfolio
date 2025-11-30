@@ -12,13 +12,13 @@ function closeModal() {
 const imageList: { src: string, title: string }[] = [
     {
         title: 'API Playground',
-        src: '/portfolio/baas1.png'
+        src: '/portfolio/portfolio/baas1.png'
     },
 ]
 </script>
 <template>
     <div class="flex flex-col">
-        <ProjectModalSummary :tags="['nuxt.js', 'spring boot']">
+        <ProjectModalSummary :tags="['next.js']">
             <template #period>
                 2025.01~ 2025.10
             </template>
@@ -38,7 +38,7 @@ const imageList: { src: string, title: string }[] = [
             </PageTitle>
             <p @click="moveToWeb(`https://fassetchain-dev.fingerservice.co.kr`)"
                 class="flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg">
-                <span class="font-medium">F-wallet 홈페이지 바로가기</span>
+                <span class="font-medium">F-Baas 홈페이지 바로가기</span>
                 <span class="text-blue-500 text-base">테스트 아이디: finger@yopmail.com / 비밀번호: 1</span>
                 <span class="text-sm">https://fassetchain-dev.fingerservice.co.kr</span>
             </p>

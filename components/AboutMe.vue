@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
 // 원본 텍스트
-const fullText1 = '안녕하세요. 웹 프론트엔드 개발자 최진경입니다.'
-const fullText2 = '웹과 모바일 경계를 허물며, 사용자 경험과 기술적 완성도를 추구합니다.'
+const fullText1 = '기획부터 UI/UX·아키텍처·구현까지-'
+const fullText2 = '서비스 전체 흐름을 책임지는 프론트엔드 개발자 최진경입니다.'
 
 // 반응형 상태로 텍스트 선언
 const animatedText1 = ref('')
@@ -74,7 +74,7 @@ onMounted(async () => {
             </div>
             <Card class="leading-7 px-3 py-4 text-base lg:text-lg lg:w-135 min:w-86 tracking-tighter">
               <p>
-                <span class="w-4 pr-2">🖐🏻</span>{{ animatedText1 }}
+                <span class="w-4 pr-2">🖐🏻</span>안녕하세요, {{ animatedText1 }}
                 <span v-if="isTyping && !animatedText2" class="cursor" />
               </p>
               <p class="pl-6">
@@ -101,40 +101,58 @@ onMounted(async () => {
           <template #question>
             Q. 본인의 <span class="font-bold bg-blue-100 text-gray-800">강점</span>이 뭐라고 생각하시나요?
           </template>
+
           <template #answer>
-            저의 강점은 <span class="font-semibold">프론트엔드 전반을 처음부터 끝까지 책임질 수 있는 end-to-end 개발 역량</span>입니다.<br />
-            초기에는 Vue.js와 Nuxt.js를 기반으로 다양한 프로젝트를 구축하며 SSR, 상태 관리, 성능 최적화에 대한 경험을 쌓았고, 최근에는 <span
-              class="font-semibold">Next.js 기반의 React 개발을 중심으로 실제 서비스 구축 비중을 크게 확장</span>해왔습니다.
+            <div class="bg-blue-100 rounded-lg p-2 mb-2">
+              <ul class="list-disc pl-5 flex flex-col gap-2">
+                <li>복잡한 도메인(Web3 기반 서비스)을 빠르게 분석하고 UI/UX로 풀어내는 능력</li>
+                <li>SSR 기반 인증 구조, API 프록싱, 상태 관리 등 FE 아키텍처 설계 역량</li>
+                <li>코드 스플리팅, 컴포넌트 렌더링 최적화(memoization) 등 성능 최적화 경험</li>
+                <li>기획·디자인부터 개발·QA·배포·운영까지 전 과정을 책임질 수 있는 End-to-End 개발 경험</li>
+                <li>API Playground와 같은 복잡한 인터랙션과 데이터 흐름을 가진 기능형 UI를<br />
+                  화면 구조 설계부터 아키텍처까지 직접 설계하고 구현한 경험</li>
+                <li>구조화된 데이터를 UI 레이어에서 안전하고 일관되게 처리한 경험</li>
+              </ul>
+            </div>
+            저의 강점은 복잡한 요구사항을 빠르게 분석하고,
+            기획부터 UI/UX 설계·아키텍처 구성·구현·운영까지
+            프론트엔드 전반을 스스로 이끌어갈 수 있는 <span class="font-semibold">end-to-end 개발 역량</span>입니다.
+            <br /><br />
+            Vue.js·Nuxt.js·Next.js 기반의 다양한 프로젝트를 통해
+            <span class="font-semibold">SSR 구조, 상태 관리, API 연동 아키텍처, 성능 최적화</span> 등
+            프론트엔드의 핵심 요소들을 폭넓게 경험해왔습니다.
+            <br /><br />
+            특히 블록체인 기반 API와의 연동 경험을 통해,
+            트랜잭션 생성 → 서명 → 전송 → 이벤트 조회로 이어지는 전체 흐름을 이해하고
+            이를 사용자 경험 중심의 UI로 구현해본 실전 경험을 가지고 있습니다.
+            <br /><br />
+            또한 UX 플로우 설계 → UI 디자인 → FE 구조 설계 → 개발 → QA → 배포까지
+            <span class="font-semibold">서비스 전체 생명주기를 직접 리드하며, 화면 개발을 넘어
+              ‘완성도 있는 서비스’를 만드는 것을 목표</span>로 일해왔습니다.
+            <br /><br />
 
-            <br /><br />웹 서비스뿐 아니라 <span class="font-semibold">PWA, iOS WebView, 모바일 웹 환경까지 모두 고려한 통합 프론트엔드 개발
-              경험</span>을 보유하고 있으며, 사용자 경험과 기술 구조를 함께 설계하는 것을 중요하게 생각합니다.
-
-            <br /><br />또한 프로젝트 초기 설계부터
-            <span class="font-semibold">UI/UX 플로우 구성 → FE 아키텍처 설계 → API 연동 구조 정의 → 구현 → 테스트 → 배포 → 운영</span>
-            까지 전 과정을 직접 경험해, 단순 화면 개발이 아니라 <span class="font-semibold">완성도 있는 서비스 구축</span>을 목표로 일해왔습니다.
-
-            <br /><br />Web3 연동, 성능 최적화, 서버사이드 렌더링 구조 개선, 복잡한 상태 관리 설계 등 난도 있는 기술 문제를 해결해본 실전 경험도 많아, 빠르게 변화하는 기술 스택
-            환경에서도 안정적으로 성과를
-            만드는 것이 저의 강점입니다.
-
-            <br /><br />정리하자면, 저는
-            <span class="font-semibold">"최신 프론트엔드 환경에서, 사용자 경험과 기술 구조를 함께 설계하고 구현할 수 있는 개발자”</span>
-            라는 점이 가장 큰 경쟁력입니다.
+            정리하면,
+            <span class="font-semibold">
+              “사용자 경험과 기술 구조를 함께 고민하고,
+              실제 서비스 수준으로 구현할 수 있는 프론트엔드 개발자”
+            </span>
+            라는 점이 저의 가장 큰 경쟁력입니다.
           </template>
         </Interview>
+
         <Interview>
           <template #question>
             Q. 본인이 추구하는 <span class="font-bold bg-blue-100 text-gray-800">개발 가치</span>는?
           </template>
           <template #answer>
-            <p class="font-semibold mb-1">사용자가 ‘의도한 경험’을 그대로 전달하는 개발</p>
+            <p class="font-semibold mb-1"><span class="bg-yellow-100">사용자가 ‘의도한 경험’을 그대로 전달하는 개발</span></p>
             저는 기능 구현 자체보다 <span class="font-semibold">사용자가 어떤 흐름으로 서비스를 경험하는지</span>를 우선순위로 둡니다.
             <br />BaaS와 같은 서비스 플랫폼을 개발해오면서 다양한 유형의 사용자 요구를 관찰해왔고, 그 과정에서 개발자가 편한 구조보다 <span class="font-semibold">사용자가
               자연스럽게
               이해하고 사용할 수 있는 UI/UX</span>가 결국 좋은
             서비스라는 확신을 가지게 되었습니다.
 
-            <p class="font-semibold mt-5 mb-1">제품 전체를 바라보는 엔드투엔드 관점</p>
+            <p class="font-semibold mt-5 mb-1"><span class="bg-yellow-100">제품 전체를 바라보는 엔드투엔드 관점</span></p>
             기획–설계–개발–배포–유지보수까지 전체 흐름을 이해하고 직접 참여해온 경험 덕분에,
             저는 단순히 화면을 만드는 개발자가 아니라 <span class="font-semibold">제품의 완성도를 함께 책임지는 사람</span>을 지향합니다.
 

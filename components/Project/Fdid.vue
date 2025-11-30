@@ -12,33 +12,33 @@ function closeModal() {
 const imageList: { src: string, title: string }[] = [
     {
         title: '회원가입 화면',
-        src: '/portfolio/fdid2.png'
+        src: '/portfolio/portfolio/fdid2.png'
     },
     {
         title: 'VC 발급 화면',
-        src: '/portfolio/fdid3.png'
+        src: '/portfolio/portfolio/fdid3.png'
     },
     {
         title: 'VP 생성 화면',
-        src: '/portfolio/fdid4.png'
+        src: '/portfolio/portfolio/fdid4.png'
     },
     {
         title: '관리자 페이지-VC 관리 화면',
-        src: '/portfolio/fdid-admin-vc.png'
+        src: '/portfolio/portfolio/fdid-admin-vc.png'
     },
     {
         title: '관리자 페이지-VC 등록 화면',
-        src: '/portfolio/fdid-admin-vc_register.png'
+        src: '/portfolio/portfolio/fdid-admin-vc_register.png'
     },
     {
         title: '블록체인 대시보드-VP 관리 화면',
-        src: '/portfolio/fdid-admin-vp.png'
+        src: '/portfolio/portfolio/fdid-admin-vp.png'
     },
 ]
 </script>
 <template>
     <div class="flex flex-col">
-        <ProjectModalSummary :tags="['nuxt.js', 'pwa', 'swift UI', 'golang', 'docker']">
+        <ProjectModalSummary :tags="['nuxt.js', 'pwa', 'docker']">
             <template #period>
                 2024.02 ~ 2024.09
             </template>
@@ -46,69 +46,82 @@ const imageList: { src: string, title: string }[] = [
                 프론트 개발자 1명(본인), 백엔드 개발자 2명
             </template>
             <template #part>
-                웹 개발, 웹앱(ios) 개발, did library 개발 백업 업무
+                기획, 디자인, 프론트엔드 개발, did library 개발 백업 업무
             </template>
         </ProjectModalSummary>
         <ProjectModalOutline>
-            <li>PWA 기반의 웹사이트로 시작하여, 이후 사용자 요구에 따라 iOS 웹앱 버전으로 확장 개발</li>
-            <li>사용자가 DID<span class="text-gray-500">(Decentralized Identity, 분산신원확인)</span> 및 VC<span
-                    class="text-gray-500">(검증
-                    가능한 자격 증명)</span>를 발급, 저장, 조회할 수 있는 기능을 제공
+            <p class="font-semibold leading-7 mb-3">
+                본 프로젝트는 PWA 기반으로 개발되어
+                모바일 환경에서도 빠르고 안정적으로 동작할 수 있도록
+                화면 설계 · UX 플로우 · 캐싱 전략까지
+                <span class="font-semibold text-blue-600">모바일 중심으로 최적화한 서비스</span>입니다.
+                기획 → UX 설계 → UI 디자인 → 프론트엔드 개발까지
+                엔드투엔드로 직접 참여한 프로젝트입니다.
+            </p>
+            <li>
+                DID<span class="text-gray-500">(분산신원확인)</span> 및 VC<span class="text-gray-500">(검증 가능한 자격 증명)</span>의
+                발급 · 저장 · 조회 기능 제공
                 <ul class="list-circle pl-5">
                     <li>
-                        <Tag :is-skill="true" text="cypto.js" /> 라이브러리를 활용한 데이터 암호화 지원
+                        <Tag :is-skill="true" text="crypto.js" /> 기반 AES 암호화를 적용한 안전한 데이터 저장
                     </li>
-                    <li>Index DB를 사용하여 복잡한 구조의 DID, VC 데이터 저장</li>
+                    <li>IndexDB + Dexie.js를 활용한 복잡한 JSON 데이터 구조 저장</li>
                 </ul>
             </li>
-            <li>보유하고 있는 VC로 VP<span class="text-gray-500">(검증 가능한 프레젠테이션)</span>을 생성하여 인증기관에 검증 요청하는 기능을 제공
+
+            <li>
+                보유 VC로 VP<span class="text-gray-500">(검증 가능한 프레젠테이션)</span> 생성 및 인증 기관 검증 요청
                 <ul class="list-circle pl-5">
                     <li>
-                        <Tag :is-skill="true" text="vue-qrcode" /> 라이브러리를 사용하여 VP 데이터를 QR code로 생성 및 리딩하는 기능 구현
+                        <Tag :is-skill="true" text="vue-qrcode" /> 활용
+                        VP 데이터를 QR Code로 생성 및 리딩하여 안전한 데이터 전달 지원
                     </li>
                 </ul>
             </li>
+
         </ProjectModalOutline>
+
         <ProjectModalFunction>
             <li>
-                <p class="font-semibold">IndexDB 및 Dexie.js를 활용한 복잡한 데이터 관리</p>
-                <!-- <ul class="list-circle pl-5 mt-2">
-                    <li class="text-base leading-7">
-                        <p class="font-semibold">DID와 VC와 같은 복잡한 JSON 데이터 처리</p>
-                        IndexDB는 객체 저장소(Object Store)를 통해 복잡한 JSON 구조의 데이터를 관리할 수 있으며, 데이터베이스처럼 동작하므로 로컬스토리지나 세션스토리지보다 ㅇ
-                        프로젝트에서 DID와 VC 데이터를 저장하고 관리하기 위해 IndexDB를 사용했습니다.
-                        <br/><Tag :is-skill="true" text="dexie.js" /> 라이브러리를 활용해 IndexDB의 복잡한 API를 간소화하고, 데이터 저장 및 핸들링의 효율성을
-                        극대화했습니다.
-                    </li>
-                </ul> -->
-                <ul class="my-2">
-                    <div class="bg-zinc-200 px-3 py-2 rounded-lg text-base">
-                        <p class="mb-4 font-semibold">💡 로컬스토리지나 세션스토리지가 아닌 index DB를 사용한 이유</p>
-                        <div class="mt-2 ml-4">
-                            <p class="font-semibold">1. 구조화된 데이터 관리</p>
-                            <div class="pl-3 mt-1">
-                                <span>웹 스토리지에 저장해야 할 정보가 DID, VC와 같이 복잡한 JSON 형식이므로, 문자열만 저장되는 세션스토리지나 로컬스토리지에 저장하기엔 부적합합니다. IndexDB는 객체 저장소(Object Store)를 통해 복잡한 JSON 구조의 데이터를 관리할 수 있으며, 데이터베이스처럼 동작하므로 보다 체계적입니다.</span>
-                                <br />하지만 Index DB는 낮은 계층(low level)에서 동작하는 API이기 때문에 아주 간단한 데이터만 저장하려고 해도 복잡한 환경 설정을 했어야 했는데요, 이 점을 <Tag :is-skill="true" text="dexie.js" /> 라이브러리를 활용해 데이터 저장 및 핸들링의 효율성을 극대화할 수 있었습니다.
-                            </div>
-                        </div>
-                        <div class="mt-2 ml-4">
-                            <p class="font-semibold">2. 대량 데이터 처리</p>
-                            <div class="pl-3 mt-1">
-                                <span>로컬스토리지의 용량 제한(5~10MB)을 초과하는 데이터를 GB 단위로 저장 가능하며, 빠른 검색과 대규모 데이터 처리에 적합합니다</span>
-                            </div>
-                        </div>
-                        <p class="mt-2 ml-4 text-blue-500 cursor-pointer hover:text-blue-600 duration-300"
-                            @click="moveToWeb('https://jinnnkcoding.tistory.com/239')">관련 블로그 포스팅 보기</p>
+                <p class="font-semibold">IndexDB 및 Dexie.js 기반의 로컬 데이터베이스 설계</p>
+                <div class="bg-zinc-200 px-3 py-2 rounded-lg text-base leading-7">
+                    <p class="mb-4 font-semibold">💡 왜 로컬스토리지/세션스토리지 대신 IndexDB를 사용했는가?</p>
+
+                    <p class="font-semibold ml-2">1. 복잡한 구조의 DID·VC 데이터 보관을 위한 스키마 기반 저장소 필요</p>
+                    <div class="pl-5 mt-1">
+                        DID와 VC는 여러 단계로 중첩된 JSON 형태로, 이 데이터를 문자열 기반의
+                        localStorage/sessionStorage로 저장하는 것은 구조적·보안적 한계가 있다고 판단했습니다.
+                        <br />
+                        IndexDB는 객체 저장소를 기반으로 하는
+                        <span class="font-semibold">브라우저 내장 NoSQL DB</span>로,
+                        구조화된 데이터를 안정적으로 저장하고 조회할 수 있는 장점이 있습니다.
+                        다만 IndexDB의 복잡한 트랜잭션 API 대신
+                        <Tag :is-skill="true" text="Dexie.js" />를 사용해 데이터 저장·조회 흐름을 더 직관적인 구조로 재구성했습니다.
                     </div>
-                </ul>
+
+                    <p class="font-semibold mt-4 ml-2">2. 대량 데이터 처리 가능 (GB 단위)</p>
+                    <div class="pl-5 mt-1">
+                        실제 테스트 과정에서 VC 발급 시 복잡한 메타데이터가 누적되면서 로컬스토리지의 용량 한계를 금방 초과하게 되었습니다.
+                        IndexDB를 활용함으로써 용량 제약 없이 데이터를 관리할 수 있었고,
+                        검색·조회 속도 또한 안정적으로 유지할 수 있었습니다.
+                    </div>
+
+                    <p class="mt-2 ml-4 text-blue-500 cursor-pointer hover:text-blue-600 duration-300"
+                        @click="moveToWeb('https://jinnnkcoding.tistory.com/239')">
+                        관련 블로그 포스팅 보기
+                    </p>
+                </div>
             </li>
+
             <li>
                 <p class="font-semibold">
-                    <Tag :is-skill="true" text="cypto.js" /> 라이브러리를 사용하여 사용자가 입력한 핀번호로 DID 및 VC 데이터를 암호화</p>
-                    <div class="pl-5 mt-2 text-base">
-                        Crypto.js 라이브러리를 활용하여 사용자가 입력한 핀번호로 DID 및 VC 데이터를 AES(대칭키 암호화) 방식으로 암호화했습니다.<br />
-                            브라우저에 저장된 데이터를 조회할 때 핀번호 입력을 요구하며, 핀번호가 일치하지 않으면 데이터 조회가 불가능하도록 설계했습니다. 아래는 사용자가 DID 정보를 저장하고 요청하는 시퀀스입니다.
-                    </div>
+                    <Tag :is-skill="true" text="cypto.js" /> 라이브러리를 사용하여 사용자가 입력한 핀번호로 DID 및 VC 데이터를 암호화
+                </p>
+                <div class="pl-5 mt-2 text-base">
+                    사용자가 입력한 핀번호로 DID 및 VC 데이터를 AES(대칭키 암호화) 방식으로 암호화했습니다.<br />
+                    브라우저에 저장된 데이터를 조회할 때 핀번호 입력을 요구하며, 핀번호가 일치하지 않으면 데이터 조회가 불가능하도록 설계했습니다. 아래는 사용자가 DID 정보를 저장하고 요청하는
+                    시퀀스입니다.
+                </div>
             </li>
             <img src="/portfolio/sequence.png" />
             <li>
@@ -125,15 +138,26 @@ const imageList: { src: string, title: string }[] = [
                     </li>
                     <li class="mt-2">
                         <p class="font-semibold mb-1">QR Reader와 데이터 검증</p>
-                        <span class="text-base">QR Reader를 통해 전달받은 VP 데이터를 디코딩한 후, 인증서버에 전송하여 데이터 무결성을 검증하는 기능을 구현했습니다. 이를 통해 VP 데이터가 손상되거나 위변조되지 않았음을 확인할 수 있도록 했습니다.</span>
+                        <span class="text-base">QR Reader를 통해 전달받은 VP 데이터를 디코딩한 후, 인증서버에 전송하여 데이터 무결성을 검증하는 기능을 구현했습니다.
+                            이를 통해 VP
+                            데이터가 손상되거나 위변조되지 않았음을 확인할 수 있도록 했습니다.</span>
                     </li>
                 </ul>
             </li>
+
+
             <li>
-                <p class="font-semibold">PWA 기반의 웹 프로젝트로 개발</p>
-                <div class="pl-1 text-base">네트워크 연결이 없는 상태에서도 <span class="font-semibold">Service Worker</span>를 활용하여 데이터를 로컬에서 캐싱하고 앱을 사용할 수 있도록 설계했습니다.<br />모바일 사원증을 불러오는 웹 프로젝트 특성 상 오프라인 환경에서도
-                    작동해야 된다고 판단하여 이와 같이 기획하였습니다.</div>
+                <p class="font-semibold">PWA 기반으로 모바일 환경에서도 안정적으로 동작하도록 설계</p>
+                <div class="pl-1 text-base leading-7">
+                    모바일 신원증명 서비스 특성상 오프라인 환경에서도 정보를 조회해야 했기 때문에,
+                    <span class="font-semibold">Service Worker 기반 캐싱</span>을 적용하여
+                    네트워크가 없는 상태에서도 VC(검증 가능한 자격 증명)를 확인할 수 있도록 구현했습니다.
+                    <br />
+                    또한 화면 구성과 상호작용 요소를 모바일 중심으로 설계해,
+                    앱처럼 자연스럽게 사용할 수 있는 <span class="font-semibold">모바일 최적화 UX</span>를 제공하였습니다.
+                </div>
             </li>
+
         </ProjectModalFunction>
 
         <ProjectModalGallery>

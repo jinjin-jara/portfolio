@@ -23,7 +23,7 @@ const props = defineProps({
             <p class="text-gray-600 min-w-40 w-1/4">팀 구성</p>
             <slot name="team" />
         </div>
-        <div class="flex flex-row">
+        <div class="flex flex-row items-center">
             <p class="text-gray-600 min-w-40 w-1/4">담당 파트</p>
             <slot name="part" />
         </div>

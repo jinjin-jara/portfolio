@@ -46,7 +46,7 @@ const imageList: { src: string, title: string }[] = [
                 프론트 개발자 1명(본인), 백엔드 개발자 2명
             </template>
             <template #part>
-                기획, 디자인, 프론트엔드 개발, did library 개발 백업 업무
+                UI/UX 디자인 및 프론트엔드 개발<span class="text-gray-500 lg:text-base text-sm">(100%)</span>, did library 개발 백업 업무
             </template>
         </ProjectModalSummary>
         <ProjectModalOutline>

@@ -10,7 +10,7 @@ function closeModal() {
 }
 
 const imageList: { src: string, title: string }[] = [
-{
+    {
         title: '메인화면',
         src: '/portfolio/portfolio/asset0.png'
     },
@@ -87,7 +87,6 @@ const imageList: { src: string, title: string }[] = [
                     <span class="font-semibold">보안성과 유지보수성을 극대화</span>하였습니다.
                 </div>
             </li>
-
 
             <li>
                 <p class="mb-1 font-medium">
@@ -168,8 +167,8 @@ const imageList: { src: string, title: string }[] = [
                 </p>
                 <div class="text-base leading-7">
                     Markdown 문서를 <span class="font-semibold">Nuxt Content</span>로 파싱하여,
-문서 내용을 제목·본문·코드블록 등으로 구조화하고
-이를 Vue 컴포넌트에서 그대로 사용할 수 있는 형태로 구성했습니다.
+                    문서 내용을 제목·본문·코드블록 등으로 구조화하고
+                    이를 Vue 컴포넌트에서 그대로 사용할 수 있는 형태로 구성했습니다.
                     <br />
 
 

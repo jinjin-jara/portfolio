@@ -12,15 +12,15 @@ function closeModal() {
 const imageList: { src: string, title: string }[] = [
     {
         title: '메인화면',
-        src: '/portfolio/portfolio/asset0.png'
+        src: '/portfolio/asset0.png'
     },
     {
         title: 'API Playground',
-        src: '/portfolio/portfolio/asset1.png'
+        src: '/portfolio/asset1.png'
     },
     {
         title: 'API Playground_검색기능',
-        src: '/portfolio/portfolio/asset3.png'
+        src: '/portfolio/asset3.png'
     },
 ]
 </script>

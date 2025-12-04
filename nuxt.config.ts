@@ -11,61 +11,55 @@ export default defineNuxtConfig({
 
   nitro: {
     logLevel: 5,
+    output: {
+      dir: 'dist', // dist 폴더에 빌드 산출물 생성
+      publicDir: 'dist',
+    },
   },
 
   runtimeConfig: {
-    public: {
-      // API_BASE_URL: process.env.API_BASE_URL,
-    },
-    // apiSecret: process.env.API_BASE_URL,
+    public: {},
   },
 
-  // css
   css: ['~/assets/sass/vendor.scss', '~/assets/sass/app.scss'],
 
-  // plugins
-  plugins: [
-    '~/plugins/errorlogs.ts',
-  ],
+  plugins: ['~/plugins/errorlogs.ts'],
 
-  // build
   build: {
     transpile: ['@headlessui/vue'],
   },
 
-  // modules
-  modules: [
-    'nuxt-windicss',
-  ],
-  
-  // auto import components
+  modules: ['nuxt-windicss'],
+
   components: true,
 
-  // vite plugins
   vite: {
     plugins: [],
   },
 
-  // app config
+  // GitHub Pages 도메인에 맞춘 baseURL 적용
   app: {
-    // global transition
-    // pageTransition: { name: 'page', mode: 'out-in' },
-    // layoutTransition: { name: 'layout', mode: 'out-in' },
-    baseURL: '/portfolio/', // repository 이름으로 설정
+    baseURL: '/portfolio/', // GitHub Pages에서 필수
+
     head: {
       title: 'choi jin kyung portfolio',
       meta: [
         { name: 'description', content: 'This is choi jin kyung portfolio.' },
         { property: 'og:title', content: 'choi jin kyung portfolio' },
-        { property: 'og:description', content: 'This is choi jin kyung portfolio.' },
+        {
+          property: 'og:description',
+          content: 'This is choi jin kyung portfolio.',
+        },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: '/favicon.png' }, // 정적 이미지 경로
-        { property: 'og:url', content: 'https://github.com/jinjin-jara/portfolio' }, // 배포 URL
+        { property: 'og:image', content: '/portfolio/favicon.png' },
+        {
+          property: 'og:url',
+          content: 'https://jinjin-jara.github.io/portfolio/',
+        },
       ],
     },
   },
 
-  // windicss
   windicss: {
     scan: true,
   },

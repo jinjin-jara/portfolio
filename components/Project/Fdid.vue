@@ -12,27 +12,27 @@ function closeModal() {
 const imageList: { src: string, title: string }[] = [
     {
         title: '회원가입 화면',
-        src: '/portfolio/portfolio/fdid2.png'
+        src: '/portfolio/fdid2.png'
     },
     {
         title: 'VC 발급 화면',
-        src: '/portfolio/portfolio/fdid3.png'
+        src: '/portfolio/fdid3.png'
     },
     {
         title: 'VP 생성 화면',
-        src: '/portfolio/portfolio/fdid4.png'
+        src: '/portfolio/fdid4.png'
     },
     {
         title: '관리자 페이지-VC 관리 화면',
-        src: '/portfolio/portfolio/fdid-admin-vc.png'
+        src: '/portfolio/fdid-admin-vc.png'
     },
     {
         title: '관리자 페이지-VC 등록 화면',
-        src: '/portfolio/portfolio/fdid-admin-vc_register.png'
+        src: '/portfolio/fdid-admin-vc_register.png'
     },
     {
         title: '블록체인 대시보드-VP 관리 화면',
-        src: '/portfolio/portfolio/fdid-admin-vp.png'
+        src: '/portfolio/fdid-admin-vp.png'
     },
 ]
 </script>

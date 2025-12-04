@@ -12,23 +12,23 @@ function closeModal() {
 const imageList: { src: string, title: string }[] = [
     {
         title: '메인 화면',
-        src: '/portfolio/portfolio/token1.png'
+        src: '/portfolio/token1.png'
     },
     {
         title: '상품 상세페이지 및 거래화면',
-        src: '/portfolio/portfolio/token2.png'
+        src: '/portfolio/token2.png'
     },
     {
         title: '마이페이지',
-        src: '/portfolio/portfolio/token3.png'
+        src: '/portfolio/token3.png'
     },
     {
         title: '블록체인 대시보드-트랜잭션 페이지',
-        src: '/portfolio/portfolio/token4.png'
+        src: '/portfolio/token4.png'
     },
     {
         title: '블록체인 대시보드-토큰 상세 페이지',
-        src: '/portfolio/portfolio/token5.png'
+        src: '/portfolio/token5.png'
     },
 ]
 </script>
@@ -55,8 +55,7 @@ const imageList: { src: string, title: string }[] = [
             <p @click="moveToWeb(`https://www.biplex.or.kr/user/contents.php?sq=43`)"
                 class="flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg">
                 <span class="font-medium">프로젝트 소개 페이지 바로가기</span>
-                <span
-                    class="text-sm">https://www.biplex.or.kr/user/contents.php?sq=43</span>
+                <span class="text-sm">https://www.biplex.or.kr/user/contents.php?sq=43</span>
             </p>
         </PageSmallSection>
         <ProjectModalOutline>
@@ -86,7 +85,7 @@ const imageList: { src: string, title: string }[] = [
                 정적 파일(Markdown)을 바로 Vue 컴포넌트처럼 사용할 수 있어 API 문서화 작업이 간단하고 효율적이었음<br />
                 <Tag :is-skill="true" text="ContentQuery" />를 활용하여 API 검색 기능을 구현
             </li>
-            
+
         </ProjectModalFunction>
         <!-- <ProjectModalGallery>
             <ProjectModalGalleryImage v-for="(item, i) in imageList" :key="i" :title="item.title" :src="item.src"

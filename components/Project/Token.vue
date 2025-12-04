@@ -12,23 +12,23 @@ function closeModal() {
 const imageList: { src: string, title: string }[] = [
     {
         title: '메인 화면',
-        src: '/portfolio/portfolio/token1.png'
+        src: '/portfolio/token1.png'
     },
     {
         title: '상품 상세페이지 및 거래화면',
-        src: '/portfolio/portfolio/token2.png'
+        src: '/portfolio/token2.png'
     },
     {
         title: '마이페이지',
-        src: '/portfolio/portfolio/token3.png'
+        src: '/portfolio/token3.png'
     },
     {
         title: '블록체인 대시보드-트랜잭션 페이지',
-        src: '/portfolio/portfolio/fsto-transaction.png'
+        src: '/portfolio/fsto-transaction.png'
     },
     {
         title: '블록체인 대시보드-토큰 페이지',
-        src: '/portfolio/portfolio/fsto-token.png'
+        src: '/portfolio/fsto-token.png'
     },
 ]
 </script>
@@ -59,7 +59,8 @@ const imageList: { src: string, title: string }[] = [
             </p>
             <p @click="moveToWeb(`https://fsto-dev.fingerservice.co.kr:8082`)"
                 class="flex flex-col gap-2 flex-wrap cursor-pointer border border-gray-300 p-2 rounded-lg">
-                <span class="font-medium whitespace-pre-wrap">블록체인 대시보드<span class="text-gray-500">(트랜잭션 추적 페이지)</span> 바로가기</span>
+                <span class="font-medium whitespace-pre-wrap">블록체인 대시보드<span class="text-gray-500">(트랜잭션 추적 페이지)</span>
+                    바로가기</span>
                 <span class="text-sm">https://fsto-dev.fingerservice.co.kr:8082</span>
             </p>
             <p @click="moveToWeb(`https://www.finger.co.kr/homepage/html/bus/bus-05-05.html?cate=bus&sub=05&page=05`)"

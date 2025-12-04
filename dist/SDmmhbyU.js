@@ -3570,12 +3570,12 @@ const We = te(zs, [["render", qs]]),
         n.value = "";
       }
       const i = [
-        { title: "메인 랜딩 페이지", src: "/baas-index.png" },
-        { title: "플랫폼 가이드", src: "/baas-guide.png" },
-        { title: "네트워크 대시보드", src: "/baas-network.png" },
-        { title: "NFT 발행 페이지", src: "/baas-nft.png" },
-        { title: "토큰 생성 페이지", src: "/baas-token.png" },
-        { title: "Block Explorer", src: "/baas-explorer.png" },
+        { title: "메인 랜딩 페이지", src: "/portfolio/baas-index.png" },
+        { title: "플랫폼 가이드", src: "/portfolio/baas-guide.png" },
+        { title: "네트워크 대시보드", src: "/portfolio/baas-network.png" },
+        { title: "NFT 발행 페이지", src: "/portfolio/baas-nft.png" },
+        { title: "토큰 생성 페이지", src: "/portfolio/baas-token.png" },
+        { title: "Block Explorer", src: "/portfolio/baas-explorer.png" },
       ];
       return (a, e) => {
         const u = je,
@@ -4103,15 +4103,21 @@ const We = te(zs, [["render", qs]]),
         n.value = "";
       }
       const i = [
-        { title: "회원가입 화면", src: "/fdid2.png" },
-        { title: "VC 발급 화면", src: "/fdid3.png" },
-        { title: "VP 생성 화면", src: "/fdid4.png" },
-        { title: "관리자 페이지-VC 관리 화면", src: "/fdid-admin-vc.png" },
+        { title: "회원가입 화면", src: "/portfolio/fdid2.png" },
+        { title: "VC 발급 화면", src: "/portfolio/fdid3.png" },
+        { title: "VP 생성 화면", src: "/portfolio/fdid4.png" },
+        {
+          title: "관리자 페이지-VC 관리 화면",
+          src: "/portfolio/fdid-admin-vc.png",
+        },
         {
           title: "관리자 페이지-VC 등록 화면",
-          src: "/fdid-admin-vc_register.png",
+          src: "/portfolio/fdid-admin-vc_register.png",
         },
-        { title: "블록체인 대시보드-VP 관리 화면", src: "/fdid-admin-vp.png" },
+        {
+          title: "블록체인 대시보드-VP 관리 화면",
+          src: "/portfolio/fdid-admin-vp.png",
+        },
       ];
       return (a, e) => {
         const u = je,
@@ -4482,9 +4488,9 @@ const We = te(zs, [["render", qs]]),
         n.value = "";
       }
       const i = [
-        { title: "메인화면", src: "/asset0.png" },
-        { title: "API Playground", src: "/asset1.png" },
-        { title: "API Playground_검색기능", src: "/asset3.png" },
+        { title: "메인화면", src: "/portfolio/asset0.png" },
+        { title: "API Playground", src: "/portfolio/asset1.png" },
+        { title: "API Playground_검색기능", src: "/portfolio/asset3.png" },
       ];
       return (a, e) => {
         const u = je,
@@ -5060,14 +5066,17 @@ const We = te(zs, [["render", qs]]),
         n.value = "";
       }
       const i = [
-        { title: "메인 화면", src: "/token1.png" },
-        { title: "상품 상세페이지 및 거래화면", src: "/token2.png" },
-        { title: "마이페이지", src: "/token3.png" },
+        { title: "메인 화면", src: "/portfolio/token1.png" },
+        { title: "상품 상세페이지 및 거래화면", src: "/portfolio/token2.png" },
+        { title: "마이페이지", src: "/portfolio/token3.png" },
         {
           title: "블록체인 대시보드-트랜잭션 페이지",
-          src: "/fsto-transaction.png",
+          src: "/portfolio/fsto-transaction.png",
         },
-        { title: "블록체인 대시보드-토큰 페이지", src: "/fsto-token.png" },
+        {
+          title: "블록체인 대시보드-토큰 페이지",
+          src: "/portfolio/fsto-token.png",
+        },
       ];
       return (a, e) => {
         const u = je,

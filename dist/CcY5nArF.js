@@ -38,8 +38,8 @@ import {
   _ as el,
   $ as tl,
   t as ll,
-} from "./CBMe6_VQ.js";
-import { m as re, g as nl, a as sl, p as vt } from "./BDxCgM32.js";
+} from "./AC8-n-2W.js";
+import { m as re, g as nl, a as sl, p as vt } from "./C-XBrRLB.js";
 const ol = {},
   rl = {
     class:
@@ -3651,7 +3651,7 @@ const We = te(zs, [["render", qs]]),
                     onClick:
                       e[0] ||
                       (e[0] = ($) =>
-                        y(re)("https://fbaas-dev.fingerservice.co.kr")),
+                        y(re)("https://fsto-dev.fingerservice.co.kr:33000")),
                   },
                   e[6] ||
                     (e[6] = [
@@ -3683,7 +3683,9 @@ const We = te(zs, [["render", qs]]),
                     onClick:
                       e[1] ||
                       (e[1] = ($) =>
-                        y(re)("https://fbaas-dev.fingerservice.co.kr/guide")),
+                        y(re)(
+                          "https://fsto-dev.fingerservice.co.kr:33000/guide"
+                        )),
                   },
                   e[7] ||
                     (e[7] = [
@@ -3711,7 +3713,7 @@ const We = te(zs, [["render", qs]]),
                   (e[8] = [
                     l(
                       "p",
-                      { class: "font-semibold mb-2" },
+                      { class: "mb-2" },
                       [
                         r(" 본 프로젝트는 "),
                         l(
@@ -3724,20 +3726,31 @@ const We = te(zs, [["render", qs]]),
                         ),
                         l(
                           "span",
-                          { class: "font-semibold" },
+                          { class: "font-semibold bg-blue-100" },
                           "SaaS 플랫폼으로 제공하는 F-BaaS 통합 관리 플랫폼입니다."
                         ),
+                      ],
+                      -1
+                    ),
+                    l(
+                      "p",
+                      null,
+                      [
                         r(
-                          " Web3 서비스는 일반 사용자가 이해하기 어려운 복잡한 절차가 많기 때문에, 이를 "
+                          "Web3 서비스는 일반 사용자가 이해하기 어려운 복잡한 절차가 많기 때문에,"
                         ),
+                        l("br"),
+                        r(" 이를 "),
                         l(
                           "span",
                           { class: "font-semibold" },
                           "GUI 기반의 직관적인 흐름으로 재구성"
                         ),
                         r(
-                          "하여 개발자뿐 아니라 기획자·운영자도 쉽게 사용할 수 있도록 설계했습니다. 또한 Next.js 기반으로 구축하여 "
+                          "하여 개발자뿐 아니라 기획자·운영자도 쉽게 사용할 수 있도록 설계했습니다. "
                         ),
+                        l("br"),
+                        r("또한 Next.js 기반으로 구축하여 "),
                         l(
                           "span",
                           { class: "font-semibold" },

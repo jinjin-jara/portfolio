@@ -1,4 +1,4 @@
-import { Y as s } from "./CBMe6_VQ.js";
+import { Y as s } from "./AC8-n-2W.js";
 const o = [
   {
     id: "baas",
